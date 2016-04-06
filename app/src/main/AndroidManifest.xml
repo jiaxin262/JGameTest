@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jia.jason.jgametest" >
+
+    <application
+        android:name=".JApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/airship_icon"
+        android:label="@string/app_name"
+        android:theme="@style/pub_fw_Theme_App" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activity.BaseActivity">
+        </activity>
+
+        <activity android:name=".activity.FlyBallActivity">
+        </activity>
+
+        <activity android:name=".activity.FingerPathActivity">
+        </activity>
+
+        <activity android:name=".activity.LunarLanderActivity">
+        </activity>
+
+        <activity android:name=".activity.GBallActivity">
+        </activity>
+
+        <activity android:name=".activity.GravitySensorActivity">
+        </activity>
+
+        <activity android:name=".activity.JLunarLanderActivity">
+        </activity>
+
+        <activity android:name=".activity.ListViewsActivity">
+        </activity>
+
+        <activity android:name=".activity.ListViewTestActivity">
+        </activity>
+
+        <activity android:name=".activity.ListViewAndOtherActivity">
+        </activity>
+
+        <activity android:name=".activity.ListAddSetActivity">
+        </activity>
+    </application>
+
+</manifest>
