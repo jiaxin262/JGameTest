@@ -9,7 +9,7 @@ public class MainActivity extends BaseActivity {
 
     private TextView FlyBall;
     private TextView FingerPath;
-    private TextView lunarLander;
+    private TextView reachFiles;
     private TextView gBall;
     private TextView ListViewContainer;
     private TextView ListViewTest;
@@ -26,7 +26,7 @@ public class MainActivity extends BaseActivity {
 
         FlyBall = (TextView) findViewById(R.id.fly_ball);
         FingerPath = (TextView) findViewById(R.id.finger_path);
-        lunarLander = (TextView) findViewById(R.id.lunar_lander);
+        reachFiles = (TextView) findViewById(R.id.reach_files);
         gBall = (TextView) findViewById(R.id.g_ball);
         ListViewContainer = (TextView) findViewById(R.id.list_view_container);
         ListViewTest = (TextView) findViewById(R.id.list_view_test);
@@ -37,7 +37,7 @@ public class MainActivity extends BaseActivity {
 
         FlyBall.setOnClickListener(this);
         FingerPath.setOnClickListener(this);
-        lunarLander.setOnClickListener(this);
+        reachFiles.setOnClickListener(this);
         gBall.setOnClickListener(this);
         ListViewContainer.setOnClickListener(this);
         ListViewTest.setOnClickListener(this);
@@ -56,8 +56,8 @@ public class MainActivity extends BaseActivity {
             case R.id.finger_path:
                 jStartActivity(FingerPathActivity.class);
                 break;
-            case R.id.lunar_lander:
-                jStartActivity(LunarLanderActivity.class);
+            case R.id.reach_files:
+                jStartActivity(ReachFilesActivity.class);
                 break;
             case R.id.g_ball:
                 jStartActivity(GBallActivity.class);

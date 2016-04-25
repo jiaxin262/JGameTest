@@ -50,6 +50,9 @@
 
         <activity android:name=".activity.ListAddSetActivity">
         </activity>
+
+        <activity android:name=".activity.ReachFilesActivity">
+        </activity>
     </application>
 
 </manifest>
