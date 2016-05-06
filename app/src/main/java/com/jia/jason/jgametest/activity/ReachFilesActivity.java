@@ -27,6 +27,6 @@ public class ReachFilesActivity extends BaseActivity {
     @Override
     public void onClick(View v) {
         File f = new File(Question1.class.getResource("/").getPath() + "question1");
-        Question1.countChars(f);
+        new Question1().countChars(f);
     }
 }

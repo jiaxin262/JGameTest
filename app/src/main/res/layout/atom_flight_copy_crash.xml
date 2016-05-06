@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/atom_flight_tv_copy_crash"
+        style="@style/atom_flight_notice_titletextstyle"
+        android:text="开始拷贝"/>
+
+</LinearLayout>
