@@ -35,9 +35,9 @@ public class ListViewsActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_views);
 
-        itemList = JListItem.mockItems();
+        itemList = JListItem.mockItems(20);
         topAdapter = new JListViewAdapter(this, itemList);
-        itemList = JListItem.mockItems2();
+        itemList = JListItem.mockItems2(20);
         bottomAdapter = new JListViewAdapter(this, itemList);
 
         listViewContainer = (ListViewContainer) findViewById(R.id.list_view_container);

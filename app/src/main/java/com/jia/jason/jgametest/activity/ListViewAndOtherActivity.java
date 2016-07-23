@@ -36,7 +36,7 @@ public class ListViewAndOtherActivity extends BaseActivity implements AbsListVie
         setContentView(R.layout.list_view_and_other);
 
         listView = (ListView) findViewById(R.id.lv_and_other);
-        itemList = JListItem.mockItems();
+        itemList = JListItem.mockItems(20);
         adapter = new JListViewAdapter(context, itemList);
 
         continuePullView2 = (LinearLayout) findViewById(R.id.atom_flight_ota_continue_pull_layout);

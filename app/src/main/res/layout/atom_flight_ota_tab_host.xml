@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jia.jason.jgametest.view.FlightTabTagHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/atom_flight_tbv"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/atom_flight_common_white"
+    android:orientation="horizontal"
+    app:atom_flight_normalTextColor="@color/atom_flight_tab_normal_color_selector_new"
+    app:atom_flight_selectedTextColor="@color/atom_flight_tab_selected_color_selector_new"/>

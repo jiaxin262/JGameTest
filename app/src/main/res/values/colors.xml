@@ -19,4 +19,150 @@
     <color name="result_dialog_bg">#71ededed</color>
     <color name="night_modle">#3b3b3b</color>
     <color name="night_modle2">#454545</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Common color -->
+    <color name="atom_flight_common_white">#ffffffff</color>
+    <color name="atom_flight_common_red">#ffff4500</color>
+    <color name="atom_flight_common_blue">#ff1ba9ba</color>
+    <color name="atom_flight_common_black">#ff333333</color>
+    <color name="atom_flight_common_hint_line">#ffc7ced4</color>
+    <color name="atom_flight_common_white_bg_click_text">#ff1ba9ba</color>
+    <color name="atom_flight_common_D2D5DB">#ffD2D5DB</color>
+
+    <!-- Already exist color -->
+    <color name="atom_flight_light_green">#1bba5e</color>
+    <color name="atom_flight_button_red_press">#FFbe3300</color>
+    <color name="atom_flight_button_red_disable">#33ff4500</color>
+    <color name="atom_flight_button_red_normal">#ffff4500</color>
+    <color name="atom_flight_titlebar_title_color">#77ffff</color>
+    <color name="atom_flight_titlebar_title_pressed_color">#3cc0c8</color>
+    <color name="atom_flight_common_color_black">#FF000000</color>
+    <color name="atom_flight_common_color_orange">#ffff3300</color>
+    <color name="atom_flight_common_color_red">#FFFF0000</color>
+    <color name="atom_flight_common_color_gray">#7F8081</color>
+    <color name="atom_flight_color_deep_orange">#ffffcf5b</color>
+    <color name="atom_flight_color_light_orange">#bf8000</color>
+    <!-- 值机按钮不可用状态 色值-->
+    <color name="atom_flight_common_color_not_enable">#c7ced4</color>
+    <color name="atom_flight_button_blue_normal">#ff1ba9ba</color>
+    <!-- 值机tab选中和未选中 -->
+    <color name="atom_flight_checkin_tab_selected">#1ba9ba</color>
+    <!-- ios7 -->
+    <color name="atom_flight_background_color_blue">#1ba9ba</color>
+    <!-- 表格的列说明文字的颜色 -->
+    <color name="atom_flight_table_title_des">#00616d</color>
+    <color name="atom_flight_ios7_gray_line_color">#99d1d3d4</color>
+    <!-- 带60%透明度的白色 -->
+    <color name="atom_flight_has_transparent_white">#99ffffff</color>
+    <color name="atom_flight_has_transparent_black">#a5a5a5</color>
+    <color name="atom_flight_color_fsb">#076772</color>
+    <!-- 描述性文字的背景色 -->
+    <color name="atom_flight_des_text_bg_color">#f2f8fb</color>
+    <color name="atom_flight_pagebase_lightblue">#f2f8fb</color>
+    <color name="atom_flight_text_tabheader_selected">#1ba9ba</color>
+    <color name="atom_flight_hotel_list_devider_color">#c7ced4</color>
+    <color name="atom_flight_button_blue_press">#FF168795</color>
+    <color name="atom_flight_button_blue_disable">#331ba9ba</color>
+    <color name="atom_flight_color_green">#02bb62</color>
+    <color name="atom_flight_common_color_green">#FF02bb62</color>
+    <color name="atom_flight_titlebar_background_color">#1ba9ba</color>
+    <!-- 带30%透明度的白色 -->
+    <color name="atom_flight_hasmore_transparent_white">#40ffffff</color>
+    <color name="atom_flight_ota_item_readed">#88dddddd</color>
+    <color name="atom_flight_ota_item_unread">#f5f5f5</color>
+    <color name="atom_flight_common_color_half_white">#C7CED4</color>
+    <color name="atom_flight_bg_notice">#fff6ed</color>1
+    <color name="atom_flight_color_red">#ff6f26</color>
+    <!--酒店订单状态栏分割线-->
+    <color name="atom_flight_vertical_line_color">#99d1d3d4</color>
+    <color name="atom_flight_drawable_F2F2F2">#F2F2F2</color>
+    <color name="atom_flight_common_color_line">#E8E8E8</color>
+    <color name="atom_flight_text_black">#454545</color>
+    <!-- 带90%透明度的白色 -->
+    <color name="atom_flight_transparent_white">#e5ffffff</color>
+    <color name="atom_flight_transparent_eighty_percent_black">#cc000000</color>
+    <!-- 60%透明度的黑色 -->
+    <color name="atom_flight_half_transparent_black">#99000000</color>
+    <color name="atom_flight_common_color_line_gray">#FFE3E3E3</color>
+    <!--微信红包相关-->
+    <color name="atom_flight_background_detail_color_wx_envo">#FFE09D</color>
+    <color name="atom_flight_common_color_layout_background1">#FFF2F8FB</color>
+    <color name="atom_flight_color_blue">#ff1ba9ba</color>
+    <!-- 黑灰色 -->
+    <color name="atom_flight_balck_and_gray">#ff076772</color>
+    <color name="atom_flight_color_list_divider">#FFE1E1E1</color>
+    <color name="atom_flight_color_list_divider_gray">#ededed</color>
+    <color name="atom_flight_text_gray">#7f8081</color>
+    <color name="atom_flight_text_gray_trans">#7f7f8081</color>
+    <color name="atom_flight_button_yellow_normal">#ffff9600</color>
+    <!--限时特惠倒计时颜色-->
+    <color name="atom_flight_spring_sale_red">#ffec3f31</color>
+    <color name="atom_flight_spring_sale_gray">#ff888888</color>
+    <color name="atom_flight_blue_common_color">#1ba9ba</color>
+    <color name="atom_flight_green">#3dc651</color>
+
+    <color name="atom_flight_transparent_black">#8000</color>
+    <color name="atom_flight_bg_policy_noticeboard">#faffffff</color>
+    <color name="atom_flight_bg_notice_divider">#e6e6e6</color>
+    <color name="atom_flight_bg_pagenoticebar">#f2f2f2</color>
+
+    <color name="atom_flight_bg_order_list_item">#f2f8fb</color>
+
+    <!-- 航班列表页 -->
+    <color name="atom_flight_title_bar_text">#ff1ba9ba</color>
+    <!-- 保险选择页底部温馨提示 -->
+    <color name="atom_flight_insurance_choose_bottom_tip">#b8b8b8</color>
+    <!-- 国内订单填写页提交按钮背景-->
+    <color name="atom_flight_button_orange_normal">#ff9705</color>
+    <color name="atom_flight_button_orange_press">#cc7904</color>
+    <color name="atom_flight_button_orange_disable">#ff9705</color>
+    <color name="atom_flight_button_orange_special">#ff5c00</color>
+    <color name="atom_flight_button_orange_unenabled">#ffd9a5</color>
+
+    <color name="atom_flight_text_orange">#ff8205</color>
+    <color name="atom_flight_text_ota_dialog_blue">#21c2d5</color>
+
+    <color name="atom_flight_keybord_normal">#ffffff</color>
+    <color name="atom_flight_keybord_press">#d2d4d8</color>
+    <color name="atom_flight_keybord_disable">#c7ced4</color>
+    <color name="atom_flight_text_secondarytitle">#888888</color>
+    <color name="atom_flight_bg_divider">#e5e5e5</color>
+    <color name="atom_flight_color_f8f8f8">#f8f8f8</color>
+    <color name="atom_flight_color_fff6ed">#fff6ed</color>
+    <color name="atom_flight_color_e5e5e5">#e5e5e5</color>
+    <color name="atom_flight_color_f0f2f4">#f0f2f4</color>
+    <color name="atom_flight_color_888888">#888888</color>
+    <color name="atom_flight_color_E3E6E9">#E3E6E9</color>
+    <color name="atom_flight_bg_eventnotice">@color/atom_flight_color_fff6ed</color>
+
+    <color name="atom_flight_color_order_status3">#999999</color>
+    <color name="atom_flight_bg_tabpanel">#f9f9f8</color>
+    <color name="atom_flight_text_tabpanel_normal">#b5b5b5</color>
+    <color name="atom_flight_text_tabpanel_pressed">@color/atom_flight_blue_common_color</color>
+
+    <!--大礼包字体颜色-->
+    <color name="atom_flight_big_gift_bg_color">#66000000</color>
+    <color name="atom_flight_big_gift_text_color">#fff0c9</color>
+    <color name="atom_flight_big_gift_btn_bg_color">#ffe8ab</color>
+
+    <color name="atom_flight_alpha_nine_five_white">#f2ffffff</color>
+    <!--航班动态bug修复-->
+    <color name="atom_flight_status_toptip_bg_normal">#acc3c6</color>
+    <color name="atom_flight_status_toptip_text_orange">#ff8205</color>
+    <color name="atom_flight_status_toptip_bg_orange">#fff6ed</color>
+
+    <color name="atom_flight_price_detail_dash_color">#d7d7d7</color>
+    <color name="atom_flight_common_bg_color">#efeff4</color>
+    <!--模拟高斯模糊-->
+    <color name="atom_flight_common_cover_color">#88000000</color>
+
+    <color name="atom_flight_common_white_gray">#d0d2d3</color>
+    <color name="atom_flight_car_text_color">#ff0288ce</color>
+    <color name="atom_flight_bg_gray">#ffdcdcdc</color>
+    <color name="atom_flight_common_bg_gray">#fff0f2f4</color>
+    <color name="atom_flight_city_text_gray">#ff666666</color>
 </resources>

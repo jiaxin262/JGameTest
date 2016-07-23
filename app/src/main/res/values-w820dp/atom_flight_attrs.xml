@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="atom_flight_tabCornerHost">
+        <attr name="android:textSize" />
+        <attr name="atom_flight_selectedTextColor" format="reference" />
+        <attr name="atom_flight_normalTextColor" format="reference" />
+        <!-- 选中的TAb背景 -->
+        <attr name="atom_flight_leftSelectedBackground" format="reference" />
+        <attr name="atom_flight_centerSelectedBackground" format="reference" />
+        <attr name="atom_flight_rightSelectedBackground" format="reference" />
+        <!-- 未选中的Tab背景 -->
+        <attr name="atom_flight_leftNormalBackground" format="reference" />
+        <attr name="atom_flight_centerNormalBackground" format="reference" />
+        <attr name="atom_flight_rightNormalBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_DashedLine">
+        <attr name="android:orientation" />
+        <attr name="android:color"/>
+    </declare-styleable>
+    <declare-styleable name="atom_flight_WeightedLinearLayout">
+        <attr name="atom_flight_majorWeight" format="float" />
+        <attr name="atom_flight_minorWeight" format="float" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_OnOffButton">
+        <attr name="android:checked" />
+    </declare-styleable>
+    <!-- used to set the minTextSize via xml -->
+    <attr name="atom_flight_autoScaleTextViewStyle" format="reference" />
+    <declare-styleable name="atom_flight_AutoScaleTextView">
+        <attr name="atom_flight_minTextSize" format="dimension" />
+        <attr name="atom_flight_maxTextSize" format="dimension" />
+    </declare-styleable>
+    <style name="atom_flight_TextAppearanceDialogWindowTitle">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#27AAAF</item>
+    </style>
+    <style name="atom_flight_DialogWindowTitle">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:textAppearance">@style/atom_flight_TextAppearanceDialogWindowTitle</item>
+    </style>
+    <style name="atom_flight_ButtonHolo" parent="android:Widget.Button">
+        <item name="android:background">@drawable/atom_flight_btn_holo_blue</item>
+        <item name="android:textSize">14dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="atom_flight_Theme_Dialog_Alert" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/atom_flight_DialogWindowTitle</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:buttonStyle">@style/atom_flight_ButtonHolo</item>
+    </style>
+    <declare-styleable name="atom_flight_ClearableEditText">
+        <attr name="atom_flight_deleteEnabled" format="boolean" />
+        <attr name="atom_flight_textSizeHint" format="dimension" />
+        <attr name="atom_flight_textStyleHint">
+            <flag name="normal" value="0" />
+            <flag name="bold" value="1" />
+            <flag name="italic" value="2" />
+        </attr>
+        <attr name="android:textSize" />
+        <attr name="android:textStyle" />
+        <attr name="atom_flight_clearableIcon" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="atom_flight_SegmentedControl">
+        <!-- Defines segmented control buttons text. -->
+        <attr name="atom_flight_segmentedNames" format="reference" />
+    </declare-styleable>
+    <!-- com.Qunar.view.SlidingUpPanelLayout -->
+    <declare-styleable name="atom_flight_SlidingUpPanelLayout">
+        <attr name="atom_flight_collapsedHeight" format="dimension" />
+        <attr name="atom_flight_shadowHeight" format="dimension" />
+        <attr name="atom_flight_fadeColor" format="color" />
+        <attr name="atom_flight_flingVelocity" format="integer" />
+        <attr name="atom_flight_dragView" format="reference" />
+        <attr name="atom_flight_upScrollView" format="reference" />
+        <attr name="atom_flight_actionView" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="atom_flight_SFImageView">
+        <!-- [光圈大小半径,可不设]  值是相对于自身View的大小,范围0.0~1.0 -->
+        <attr name="atom_flight_haloRadius" format="float" />
+        <!-- [正常状态的颜色,可不设] -->
+        <attr name="atom_flight_normalColor" format="color" />
+        <!-- [按下状态的颜色,可不设] 例:原貌基础上变暗≈"#44000000" -->
+        <attr name="atom_flight_pressedColor" format="color" />
+        <!-- [禁用状态的颜色,可不设] 例:变灰 0x88cccccc -->
+        <attr name="atom_flight_disabledColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_RailwayMenuItemLayout">
+        <!-- 主文字 -->
+        <attr name="android:text" />
+        <!-- 主文字大小 默认为18dp -->
+        <attr name="android:textSize" />
+        <!-- 主文字颜色 默认为gray -->
+        <attr name="android:textColor" />
+        <!-- 主文字是否显示一行 默认为true -->
+        <attr name="android:singleLine" />
+        <!-- 首图标 -->
+        <attr name="atom_flight_checkIcon" format="reference" />
+        <!-- icon的间隔 -->
+        <attr name="atom_flight_checkIconPadding" format="dimension" />
+        <!-- 是否显示底线 -->
+        <attr name="atom_flight_bottomLine" format="boolean" />
+    </declare-styleable>
+    <!-- 圆形进度条 -->
+    <declare-styleable name="atom_flight_RoundProgressBar">
+        <attr name="atom_flight_roundColor" format="color" />
+        <attr name="atom_flight_roundProgressColor" format="color" />
+        <attr name="atom_flight_roundWidth" format="dimension"></attr>
+        <attr name="atom_flight_textColor" format="color" />
+        <attr name="atom_flight_textSize" format="dimension" />
+        <attr name="atom_flight_max" format="integer"></attr>
+        <attr name="atom_flight_current_progress" format="integer"></attr>
+        <attr name="atom_flight_startAngle" format="integer"></attr>
+        <attr name="atom_flight_textIsDisplayable" format="boolean"></attr>
+        <attr name="atom_flight_style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+        <attr name="atom_flight_showStyle">
+            <enum name="PERCENTAGE" value="0"></enum>
+            <enum name="CURRENT_PROGRESS" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <!-- 交叉推荐tagView -->
+    <declare-styleable name="atom_flight_BizRecTag">
+        <attr name="atom_flight_backgroundType">
+            <enum name="RED" value="0"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="atom_flight_ItemLayout">
+        <!-- 主文字 -->
+        <attr name="android:text" />
+        <!-- 主文字大小 默认为18dp -->
+        <attr name="android:textSize" />
+        <!-- 主文字颜色 默认为gray -->
+        <attr name="android:textColor" />
+        <!-- 主文字是否显示一行 默认为true -->
+        <attr name="android:singleLine" />
+        <!-- 主文字weight 默认为1 -->
+        <attr name="atom_flight_titleWeight" format="float" />
+        <!-- 首图标 -->
+        <attr name="atom_flight_itemLayoutIcon" format="reference" />
+        <!-- icon的间隔 -->
+        <attr name="atom_flight_iconMargin" format="dimension" />
+        <!-- 是否显示箭头 -->
+        <attr name="atom_flight_arrow" format="boolean" />
+        <!-- 箭头weight 默认为0 -->
+        <attr name="atom_flight_arrowWeight" format="float" />
+        <!-- 右侧快捷样式：纯文字 -->
+        <attr name="atom_flight_rightText" format="string" />
+        <!-- 右侧快捷样式：纯文字提示文字 -->
+        <attr name="atom_flight_rightTextHint" format="string" />
+        <!-- 首图标 -->
+        <attr name="atom_flight_icon" format="reference" />
+    </declare-styleable>
+    <!-- ShrinkTextView add by Chaos -->
+    <declare-styleable name="atom_flight_ShrinkTextView">
+        <!-- like TextView ems -->
+        <attr name="atom_flight_ems" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_TabIndicator">
+        <attr name="atom_flight_tabIndicatorStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_HotelImageTabIndicator">
+        <attr name="atom_flight_hotelImageTabIndicatorStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_RoundCornerImageView">
+        <attr name="atom_flight_cornerRadius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_CopySupportView">
+        <attr name="atom_flight_prefixText" format="string" />
+        <attr name="atom_flight_suffixText" format="string" />
+        <attr name="atom_flight_enable_copy" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="HorizontalPicker">
+        <attr name="android:textColor" />
+        <attr name="android:textSize" />
+        <attr name="values" format="reference" />
+        <attr name="android:ellipsize" />
+        <attr name="android:marqueeRepeatLimit" />
+        <attr name="dividerSize" format="dimension" />
+        <attr name="sideItems" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="atom_flight_QSeekBar">
+        <attr name="atom_flight_backgroundBar" format="reference" />
+        <attr name="atom_flight_handler" format="reference" />
+        <attr name="atom_flight_selected" format="reference" />
+    </declare-styleable>
+
+    <attr name="horizontalPickerStyle" format="reference" />
+    <!-- 自适应布局 -->
+    <declare-styleable name="atom_flight_FlowLayout">
+        <attr name="android:orientation" />
+        <attr name="atom_flight_layoutDirection" format="enum">
+            <enum name="atom_flight_ltr" value="0"/>
+            <enum name="atom_flight_rtl" value="1"/>
+        </attr>
+        <attr name="atom_flight_debugDraw" format="boolean"/>
+        <attr name="atom_flight_weightDefault" format="float" />
+        <attr name="android:gravity"/>
+    </declare-styleable>
+    <declare-styleable name="atom_flight_FlowLayout_LayoutParams">
+        <attr name="atom_flight_layout_newLine" format="boolean"/>
+        <attr name="atom_flight_layout_weight" format="float"/>
+        <attr name="android:layout_gravity"/>
+    </declare-styleable>
+    <declare-styleable name="atom_flight_PagerSlidingTabStrip">
+        <attr name="pstsIndicatorColor" format="color" />
+        <attr name="pstsUnderlineColor" format="color" />
+        <attr name="pstsDividerColor" format="color" />
+        <attr name="pstsIndicatorHeight" format="dimension" />
+        <attr name="pstsUnderlineHeight" format="dimension" />
+        <attr name="pstsDividerPadding" format="dimension" />
+        <attr name="pstsTabPaddingLeftRight" format="dimension" />
+        <attr name="pstsScrollOffset" format="dimension" />
+        <attr name="pstsTabBackground" format="reference" />
+        <attr name="pstsShouldExpand" format="boolean" />
+        <attr name="pstsTextAllCaps" format="boolean" />
+    </declare-styleable>
+    <!--SwipeLayout-->
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+</resources>

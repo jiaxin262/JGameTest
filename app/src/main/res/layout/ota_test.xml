@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/atom_flight_layoutRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/atom_flight_common_bg_color">
+
+    <com.jia.jason.jgametest.view.SlideLayoutContainer
+        android:id="@+id/atom_flight_ota_list_layer_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/atom_flight_tbv_container_first"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <include
+            android:id="@+id/atom_flight_ota_continue_pull_rl"
+            layout="@layout/atom_flight_ota_continue_pull_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <LinearLayout
+            android:id="@+id/atom_flight_tbv_container_second"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+    </com.jia.jason.jgametest.view.SlideLayoutContainer>
+
+</FrameLayout>

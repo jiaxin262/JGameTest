@@ -16,7 +16,7 @@ public class MainActivity extends BaseActivity {
     private TextView jLunarLander;
     private TextView ListViewAndOther;
     private TextView gravitySensor;
-    private TextView listAddSet;
+    private TextView otaTest;
 
 
     @Override
@@ -33,7 +33,7 @@ public class MainActivity extends BaseActivity {
         jLunarLander = (TextView) findViewById(R.id.j_lunar_lander);
         ListViewAndOther = (TextView) findViewById(R.id.list_view_and_other);
         gravitySensor = (TextView) findViewById(R.id.gravity_sensor);
-        listAddSet = (TextView) findViewById(R.id.list_add_set);
+        otaTest = (TextView) findViewById(R.id.ota_test);
 
         FlyBall.setOnClickListener(this);
         FingerPath.setOnClickListener(this);
@@ -44,7 +44,7 @@ public class MainActivity extends BaseActivity {
         jLunarLander.setOnClickListener(this);
         ListViewAndOther.setOnClickListener(this);
         gravitySensor.setOnClickListener(this);
-        listAddSet.setOnClickListener(this);
+        otaTest.setOnClickListener(this);
     }
 
     @Override
@@ -77,8 +77,8 @@ public class MainActivity extends BaseActivity {
             case R.id.gravity_sensor:
                 jStartActivity(GravitySensorActivity.class);
                 break;
-            case R.id.list_add_set:
-                jStartActivity(ListAddSetActivity.class);
+            case R.id.ota_test:
+                jStartActivity(OtaTestActivity.class);
                 break;
             default:
                 jShowAlertMessage("SORRY", "NOT ACCOMPLISHED!");

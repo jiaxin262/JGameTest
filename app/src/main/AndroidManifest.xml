@@ -53,6 +53,9 @@
 
         <activity android:name=".activity.ReachFilesActivity">
         </activity>
+
+        <activity android:name=".activity.OtaTestActivity">
+        </activity>
     </application>
 
 </manifest>

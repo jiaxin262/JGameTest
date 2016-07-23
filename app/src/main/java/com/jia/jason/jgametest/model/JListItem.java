@@ -28,13 +28,13 @@ public class JListItem {
     }
 
     //生成假数据
-    public static List<JListItem> mockItems(){
+    public static List<JListItem> mockItems(int count){
         List<JListItem> items = new ArrayList<JListItem>();
         int[] colors = new int[]{
                 Color.RED, Color.BLACK, Color.BLUE, Color.CYAN, Color.DKGRAY,
                 Color.GRAY, Color.GREEN, Color.LTGRAY, Color.YELLOW, Color.TRANSPARENT,
         };
-        for (int i=0; i<ITEM_SIZE; i++){
+        for (int i=0; i<count; i++){
             int random = new Random().nextInt(10);
             JListItem item = new JListItem(colors[random], "第"+i+"个view");
             items.add(item);
@@ -43,9 +43,9 @@ public class JListItem {
     }
 
     //生成假数据
-    public static List<JListItem> mockItems2(){
+    public static List<JListItem> mockItems2(int count){
         List<JListItem> items = new ArrayList<JListItem>();
-        for (int i=0; i<ITEM_SIZE; i++){
+        for (int i=0; i<count; i++){
             JListItem item = new JListItem(Color.GREEN, "第"+i+"个viewLLLLLLLLL");
             items.add(item);
         }
