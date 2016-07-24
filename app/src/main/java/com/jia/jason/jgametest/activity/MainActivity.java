@@ -18,7 +18,7 @@ public class MainActivity extends BaseActivity {
     private TextView gravitySensor;
     private TextView otaTest;
     private TextView tvAutoComplete;
-
+    private TextView tvToggleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +36,7 @@ public class MainActivity extends BaseActivity {
         gravitySensor = (TextView) findViewById(R.id.gravity_sensor);
         otaTest = (TextView) findViewById(R.id.ota_test);
         tvAutoComplete = (TextView) findViewById(R.id.auto_complete_text);
+        tvToggleButton = (TextView) findViewById(R.id.tv_toggleButton);
 
         FlyBall.setOnClickListener(this);
         FingerPath.setOnClickListener(this);
@@ -48,6 +49,7 @@ public class MainActivity extends BaseActivity {
         gravitySensor.setOnClickListener(this);
         otaTest.setOnClickListener(this);
         tvAutoComplete.setOnClickListener(this);
+        tvToggleButton.setOnClickListener(this);
     }
 
     @Override
@@ -85,6 +87,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.auto_complete_text:
                 jStartActivity(AutoCompleteTextActivity.class);
+                break;
+            case R.id.tv_toggleButton:
+                jStartActivity(ToggleButtonActivity.class);
                 break;
             default:
                 jShowAlertMessage("SORRY", "NOT ACCOMPLISHED!");

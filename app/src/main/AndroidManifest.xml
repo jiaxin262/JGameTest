@@ -59,6 +59,9 @@
 
         <activity android:name=".activity.AutoCompleteTextActivity">
         </activity>
+
+        <activity android:name=".activity.ToggleButtonActivity">
+        </activity>
     </application>
 
 </manifest>
