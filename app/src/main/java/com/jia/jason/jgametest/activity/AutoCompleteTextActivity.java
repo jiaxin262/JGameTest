@@ -3,6 +3,7 @@ package com.jia.jason.jgametest.activity;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.MultiAutoCompleteTextView;
 
 import com.jia.jason.jgametest.R;
 
@@ -13,6 +14,8 @@ import com.jia.jason.jgametest.R;
 public class AutoCompleteTextActivity extends BaseActivity {
 
     private AutoCompleteTextView autoCompleteTextView;
+    private MultiAutoCompleteTextView multiAutoCompleteTextView;
+
     private static final String[] COUNTRIES = {
             "Belgium", "France", "Italy", "Germany", "Spain", "China", "England", "Edgy", "Jason", "Japan", "JiaXin"
     };
@@ -22,9 +25,13 @@ public class AutoCompleteTextActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.auto_complete_layout);
 
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,  android.R.layout.simple_dropdown_item_1line, COUNTRIES);
         autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.tv_autoComplete);
         autoCompleteTextView.setThreshold(1);
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,  android.R.layout.simple_dropdown_item_1line, COUNTRIES);
         autoCompleteTextView.setAdapter(arrayAdapter);
+        multiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.tv_multi_autoComplete);
+        multiAutoCompleteTextView.setThreshold(1);
+        multiAutoCompleteTextView.setAdapter(arrayAdapter);
+        multiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
     }
 }

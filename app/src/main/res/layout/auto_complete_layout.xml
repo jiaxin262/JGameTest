@@ -8,6 +8,15 @@
         android:id="@+id/tv_autoComplete"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="关键词" />
+        android:hint="AutoCompleteTextView"
+        android:singleLine="true"/>
+
+    <MultiAutoCompleteTextView
+        android:id="@+id/tv_multi_autoComplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="MultiAutoCompleteTextView"
+        android:singleLine="true"/>
 
 </LinearLayout>
