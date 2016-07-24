@@ -17,6 +17,7 @@ public class MainActivity extends BaseActivity {
     private TextView ListViewAndOther;
     private TextView gravitySensor;
     private TextView otaTest;
+    private TextView tvAutoComplete;
 
 
     @Override
@@ -34,6 +35,7 @@ public class MainActivity extends BaseActivity {
         ListViewAndOther = (TextView) findViewById(R.id.list_view_and_other);
         gravitySensor = (TextView) findViewById(R.id.gravity_sensor);
         otaTest = (TextView) findViewById(R.id.ota_test);
+        tvAutoComplete = (TextView) findViewById(R.id.auto_complete_text);
 
         FlyBall.setOnClickListener(this);
         FingerPath.setOnClickListener(this);
@@ -45,6 +47,7 @@ public class MainActivity extends BaseActivity {
         ListViewAndOther.setOnClickListener(this);
         gravitySensor.setOnClickListener(this);
         otaTest.setOnClickListener(this);
+        tvAutoComplete.setOnClickListener(this);
     }
 
     @Override
@@ -79,6 +82,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.ota_test:
                 jStartActivity(OtaTestActivity.class);
+                break;
+            case R.id.auto_complete_text:
+                jStartActivity(AutoCompleteTextActivity.class);
                 break;
             default:
                 jShowAlertMessage("SORRY", "NOT ACCOMPLISHED!");

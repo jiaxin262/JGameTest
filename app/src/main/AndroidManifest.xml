@@ -56,6 +56,9 @@
 
         <activity android:name=".activity.OtaTestActivity">
         </activity>
+
+        <activity android:name=".activity.AutoCompleteTextActivity">
+        </activity>
     </application>
 
 </manifest>
