@@ -20,6 +20,7 @@ public class MainActivity extends BaseActivity {
     private TextView tvAutoComplete;
     private TextView tvToggleButton;
     private TextView tvListViewAdapter;
+    private TextView tvGridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class MainActivity extends BaseActivity {
         tvAutoComplete = (TextView) findViewById(R.id.auto_complete_text);
         tvToggleButton = (TextView) findViewById(R.id.tv_toggleButton);
         tvListViewAdapter = (TextView) findViewById(R.id.listView_adapter);
+        tvGridView = (TextView) findViewById(R.id.tv_gridView);
 
         FlyBall.setOnClickListener(this);
         FingerPath.setOnClickListener(this);
@@ -53,6 +55,7 @@ public class MainActivity extends BaseActivity {
         tvAutoComplete.setOnClickListener(this);
         tvToggleButton.setOnClickListener(this);
         tvListViewAdapter.setOnClickListener(this);
+        tvGridView.setOnClickListener(this);
     }
 
     @Override
@@ -96,6 +99,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.listView_adapter:
                 jStartActivity(ListAdapterActivity.class);
+                break;
+            case R.id.tv_gridView:
+                jStartActivity(GridViewActivity.class);
                 break;
             default:
                 jShowAlertMessage("SORRY", "NOT ACCOMPLISHED!");

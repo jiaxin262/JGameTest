@@ -65,6 +65,9 @@
 
         <activity android:name=".activity.ListAdapterActivity">
         </activity>
+
+        <activity android:name=".activity.GridViewActivity">
+        </activity>
     </application>
 
 </manifest>
