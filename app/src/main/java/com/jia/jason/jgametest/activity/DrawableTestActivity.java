@@ -23,9 +23,7 @@ public class DrawableTestActivity extends BaseActivity {
         tvColorDraw = (TextView) findViewById(R.id.tv_color_drawable);
         //ColorDrawable colorDrawable = new ColorDrawable(0xffff0000);
         ColorDrawable colorDrawable = (ColorDrawable) tvColorDraw.getBackground();
-        colorDrawable.setColor(0xffffffff);
-        tvColorDraw.setTextColor(0xffab00ff);
-        Color.parseColor("#ff00ff");
+        colorDrawable.setColor(0xff00ffff);
 
     }
 }
