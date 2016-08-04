@@ -17,6 +17,15 @@
             android:layout_margin="10dp"
             android:padding="10dp">
             <TextView
+                android:id="@+id/drawable_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DrawableTest"
+                android:padding="10dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/atom_flight_button_light_gray_bg_selector"
+                android:gravity="center"/>
+            <TextView
                 android:id="@+id/listView_adapter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -87,6 +96,16 @@
             android:gravity="center"
             android:layout_margin="10dp"
             android:padding="10dp">
+            <TextView
+                android:id="@+id/tv_drawable_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="DrawableState"
+                android:textColor="@color/night_modle2"
+                android:padding="10dp"
+                android:background="@drawable/atom_flight_button_light_gray_bg_selector"
+                android:gravity="center"/>
             <TextView
                 android:id="@+id/tv_gridView"
                 android:layout_width="wrap_content"

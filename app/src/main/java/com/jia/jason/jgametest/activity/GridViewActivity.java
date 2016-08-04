@@ -5,6 +5,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.GridView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.jia.jason.jgametest.R;
@@ -18,6 +19,7 @@ import java.util.List;
  */
 public class GridViewActivity extends BaseActivity {
 
+    Spinner spinner;
     GridView gridView;
     List<String> gridDataList;
     ArrayAdapter<String> arrayAdapter;
@@ -27,6 +29,7 @@ public class GridViewActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grid_view_layout);
 
+        spinner = (Spinner) findViewById(R.id.citySpinner);
         gridView = (GridView) findViewById(R.id.grid_view);
         arrayAdapter = new ArrayAdapter<String>(this, R.layout.array_adapter_item_layotu, getGridData());
         gridView.setAdapter(arrayAdapter);

@@ -68,6 +68,12 @@
 
         <activity android:name=".activity.GridViewActivity">
         </activity>
+
+        <activity android:name=".activity.DrawableTestActivity">
+        </activity>
+
+        <activity android:name=".activity.DrawableStateActivity">
+        </activity>
     </application>
 
 </manifest>
