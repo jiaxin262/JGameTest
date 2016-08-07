@@ -80,6 +80,9 @@
 
         <activity android:name=".activity.ProgressBarActivity">
         </activity>
+
+        <activity android:name=".activity.FragmentTestActivity">
+        </activity>
     </application>
 
 </manifest>

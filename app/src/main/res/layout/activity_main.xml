@@ -106,6 +106,16 @@
             android:layout_margin="10dp"
             android:padding="10dp">
             <TextView
+                android:id="@+id/tv_fragment_test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="FragmentTest"
+                android:textColor="@color/night_modle2"
+                android:padding="10dp"
+                android:background="@drawable/atom_flight_button_light_gray_bg_selector"
+                android:gravity="center"/>
+            <TextView
                 android:id="@+id/tv_drawable_state"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
