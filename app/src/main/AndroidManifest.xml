@@ -74,6 +74,12 @@
 
         <activity android:name=".activity.DrawableStateActivity">
         </activity>
+
+        <activity android:name=".activity.DrawableState2Activity">
+        </activity>
+
+        <activity android:name=".activity.ProgressBarActivity">
+        </activity>
     </application>
 
 </manifest>

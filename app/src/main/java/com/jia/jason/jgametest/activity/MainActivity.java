@@ -23,6 +23,7 @@ public class MainActivity extends BaseActivity {
     private TextView tvGridView;
     private TextView tvDrawableTest;
     private TextView tvDrawableState;
+    private TextView tvProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,7 @@ public class MainActivity extends BaseActivity {
         tvGridView = (TextView) findViewById(R.id.tv_gridView);
         tvDrawableTest = (TextView) findViewById(R.id.drawable_test);
         tvDrawableState = (TextView) findViewById(R.id.tv_drawable_state);
+        tvProgressBar = (TextView) findViewById(R.id.tv_progress_bar);
 
         FlyBall.setOnClickListener(this);
         FingerPath.setOnClickListener(this);
@@ -62,6 +64,7 @@ public class MainActivity extends BaseActivity {
         tvGridView.setOnClickListener(this);
         tvDrawableTest.setOnClickListener(this);
         tvDrawableState.setOnClickListener(this);
+        tvProgressBar.setOnClickListener(this);
     }
 
     @Override
@@ -114,6 +117,9 @@ public class MainActivity extends BaseActivity {
                 break;
             case R.id.tv_drawable_state:
                 jStartActivity(DrawableStateActivity.class);
+                break;
+            case R.id.tv_progress_bar:
+                jStartActivity(ProgressBarActivity.class);
                 break;
             default:
                 jShowAlertMessage("SORRY", "NOT ACCOMPLISHED!");
