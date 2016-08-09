@@ -3,11 +3,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <fragment
-        android:id="@+id/fragment_hole"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="com.jia.jason.jgametest.fragment.FragmentTest" />
+    <!--<fragment-->
+        <!--android:id="@+id/fragment_hole"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:name="com.jia.jason.jgametest.fragment.FragmentTest" />-->
 
     <RadioGroup
         android:id="@+id/rg_fragments"
@@ -20,43 +20,47 @@
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Fragment1"
+            android:text="F1"
             android:id="@+id/rb_f1"
             android:layout_weight="1"
             android:background="@drawable/atom_flight_button_light_gray_bg_selector"
             android:button="@null"
-            android:drawableTop="@drawable/air_ship_normal"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:checked="true"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Fragment2"
+            android:text="F2"
             android:id="@+id/rb_f2"
             android:layout_weight="1"
             android:background="@drawable/atom_flight_button_light_gray_bg_selector"
             android:button="@null"
-            android:drawableTop="@drawable/air_ship_normal"
             android:gravity="center"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Fragment3"
+            android:text="F3"
             android:id="@+id/rb_f3"
             android:layout_weight="1"
             android:background="@drawable/atom_flight_button_light_gray_bg_selector"
             android:button="@null"
-            android:drawableTop="@drawable/air_ship_normal"
             android:gravity="center"/>
         <RadioButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Fragment4"
+            android:text="F4"
             android:id="@+id/rb_f4"
             android:layout_weight="1"
             android:background="@drawable/atom_flight_button_light_gray_bg_selector"
             android:button="@null"
-            android:drawableTop="@drawable/air_ship_normal"
             android:gravity="center"/>
     </RadioGroup>
 
+    <LinearLayout
+        android:id="@+id/fragment_container_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@+id/rg_fragments">
+    </LinearLayout>
 </RelativeLayout>
