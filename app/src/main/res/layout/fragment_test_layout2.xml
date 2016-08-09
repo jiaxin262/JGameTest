@@ -7,7 +7,7 @@
         android:id="@+id/fragment_hole"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:name="com.jia.jason.jgametest.fragment.FragmentTest"/>
+        android:name="com.jia.jason.jgametest.fragment.FragmentTest" />
 
     <RadioGroup
         android:id="@+id/rg_fragments"

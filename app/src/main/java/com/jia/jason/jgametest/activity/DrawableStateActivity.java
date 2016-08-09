@@ -45,9 +45,9 @@ public class DrawableStateActivity extends BaseActivity {
 
     @Override
     public void onClick(View v) {
-        GradientDrawable gd1 = (GradientDrawable) tvDraw.getBackground();
-        gd1.setColor(Color.BLUE);
-        addTextView();
+//        GradientDrawable gd1 = (GradientDrawable) tvDraw.getBackground();
+//        gd1.setColor(Color.BLUE);
+//        addTextView();
         jStartActivity(DrawableState2Activity.class);
     }
 

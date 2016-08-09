@@ -16,9 +16,9 @@ public class DrawableState2Activity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.drawable_state_layout);
+        setContentView(R.layout.item_layout);
 
-        tvDraw = (TextView) findViewById(R.id.tv_drawable_state);
+        tvDraw = (TextView) findViewById(R.id.textView);
         tvDraw.setBackgroundResource(R.drawable.jason_shape);
 
     }
