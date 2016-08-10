@@ -3,6 +3,7 @@ package com.jia.jason.jgametest.activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
@@ -29,6 +30,7 @@ public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_test_layout2);
+        Log.e("FragmentTestActivity:", " onCreate");
 
         radioGroup = (RadioGroup) findViewById(R.id.rg_fragments);
         radioGroup.setOnCheckedChangeListener(this);
@@ -70,5 +72,47 @@ public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnC
         transaction.show(fragment);
         transaction.commit();
         currentFragment = fragment;
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.e("FragmentTestActivity:", " onStart");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.e("FragmentTestActivity:", " onResume");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.e("FragmentTestActivity:", " onPause");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.e("FragmentTestActivity:", " onStop");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.e("FragmentTestActivity:", " onDestroy");
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.e("FragmentTestActivity:", " onSaveInstanceState");
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        Log.e("FragmentTestActivity:", " onRestoreInstanceState");
     }
 }

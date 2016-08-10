@@ -1,8 +1,10 @@
 package com.jia.jason.jgametest.fragment;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,18 +20,77 @@ public class Fragment1 extends Fragment {
 
     TextView tvFragment;
 
+    //每次创建Fragment都会重新绘制View
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        Log.e("Fragment1:", " onCreateView");
         View view = inflater.inflate(R.layout.fragment_test_layotu, container, false);
         tvFragment = (TextView) view.findViewById(R.id.fragment_tv);
         return view;
     }
 
+    //当Fragment所在Activity启动完成后调用
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        Log.e("Fragment1:", " onActivityCreated");
         tvFragment.setText("This is Fragment1");
+    }
+
+    //Fragment被添加到Activity时调用，只调用一次
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        Log.e("Fragment1:", " onAttach");
+    }
+
+    //创建Fragment时调用，只调用一次
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.e("Fragment1:", " onCreate");
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.e("Fragment1:", " onStart");
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.e("Fragment1:", " onResume");
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.e("Fragment1:", " onPause");
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.e("Fragment1:", " onStop");
+    }
+
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        Log.e("Fragment1:", " onDestroyView");
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.e("Fragment1:", " onDestroy");
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        Log.e("Fragment1:", " onDetach");
     }
 }
