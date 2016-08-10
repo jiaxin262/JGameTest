@@ -4,6 +4,9 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.PagerTabStrip;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -13,6 +16,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
+import com.jia.jason.jgametest.adapter.ViewsAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by xin.jia
@@ -22,7 +29,14 @@ public class Fragment1 extends Fragment {
 
     TextView tvFragment;
     LinearLayout llFragment;
+    ViewPager viewPager;
+    PagerTabStrip tabs;
+
     ReplyListener listener;
+
+    List<View> viewList = new ArrayList<>();
+    PagerAdapter pagerAdapter;
+    List<String> titleList = new ArrayList<>();
 
     public interface ReplyListener {
         public void reply(String string);
@@ -40,6 +54,8 @@ public class Fragment1 extends Fragment {
         View view = inflater.inflate(R.layout.fragment_test_layotu, container, false);
         tvFragment = (TextView) view.findViewById(R.id.fragment_tv);
         llFragment = (LinearLayout) view.findViewById(R.id.ll_fragment);
+        viewPager = (ViewPager) view.findViewById(R.id.vp_fragments);
+        tabs = (PagerTabStrip) view.findViewById(R.id.vp_pagerTabs);
         return view;
     }
 
@@ -51,6 +67,27 @@ public class Fragment1 extends Fragment {
         tvFragment.setText("This is Fragment1");
         getDataFromActivity(getArguments());
         listener.reply("activity,fragment已接收到信息");
+
+        titleList.add("First");
+        titleList.add("Sec");
+        titleList.add("Third");
+        titleList.add("Fourth");
+        View view1 = View.inflate(getActivity(), R.layout.view_pager_view1, null);
+        View view2 = View.inflate(getActivity(), R.layout.view_pager_view2, null);
+        View view3 = View.inflate(getActivity(), R.layout.view_pager_view3, null);
+        View view4 = View.inflate(getActivity(), R.layout.view_pager_view4, null);
+        viewList.add(view1);
+        viewList.add(view2);
+        viewList.add(view3);
+        viewList.add(view4);
+
+        pagerAdapter = new ViewsAdapter(viewList, titleList);
+        viewPager.setAdapter(pagerAdapter);
+
+        tabs.setBackgroundColor(getResources().getColor(R.color.atom_flight_text_gray_trans));
+        tabs.setDrawFullUnderline(false);
+        tabs.setTabIndicatorColor(getResources().getColor(R.color.red));
+        tabs.setTextColor(getResources().getColor(R.color.red));
     }
 
     private void getDataFromActivity(Bundle bundle) {
