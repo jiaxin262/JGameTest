@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.fragment.Fragment1;
@@ -17,11 +18,11 @@ import com.jia.jason.jgametest.fragment.Fragment4;
  * Created by xin.jia
  * since 2016/8/7
  */
-public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener{
+public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnCheckedChangeListener, Fragment1.ReplyListener{
 
     RadioGroup radioGroup;
     Fragment currentFragment;
-    Fragment fragment1;
+    Fragment1 fragment1;
     Fragment fragment2;
     Fragment fragment3;
     Fragment fragment4;
@@ -39,10 +40,14 @@ public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnC
         fragment3 = new Fragment3();
         fragment4 = new Fragment4();
 
+        Bundle bundle = new Bundle();
+        bundle.putString("text", "来自Activity的问候");
+        fragment1.setArguments(bundle);
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.add(R.id.fragment_container_ll, fragment1);
         transaction.commit();
         currentFragment = fragment1;
+        fragment1.setListener(this);
     }
 
     @Override
@@ -114,5 +119,10 @@ public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnC
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.e("FragmentTestActivity:", " onRestoreInstanceState");
+    }
+
+    @Override
+    public void reply(String string) {
+        Toast.makeText(this, string, Toast.LENGTH_SHORT).show();
     }
 }

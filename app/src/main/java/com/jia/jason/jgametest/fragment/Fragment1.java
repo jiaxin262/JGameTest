@@ -5,9 +5,11 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
@@ -19,6 +21,16 @@ import com.jia.jason.jgametest.R;
 public class Fragment1 extends Fragment {
 
     TextView tvFragment;
+    LinearLayout llFragment;
+    ReplyListener listener;
+
+    public interface ReplyListener {
+        public void reply(String string);
+    }
+
+    public void setListener(ReplyListener listener) {
+        this.listener = listener;
+    }
 
     //每次创建Fragment都会重新绘制View
     @Nullable
@@ -27,6 +39,7 @@ public class Fragment1 extends Fragment {
         Log.e("Fragment1:", " onCreateView");
         View view = inflater.inflate(R.layout.fragment_test_layotu, container, false);
         tvFragment = (TextView) view.findViewById(R.id.fragment_tv);
+        llFragment = (LinearLayout) view.findViewById(R.id.ll_fragment);
         return view;
     }
 
@@ -36,6 +49,18 @@ public class Fragment1 extends Fragment {
         super.onActivityCreated(savedInstanceState);
         Log.e("Fragment1:", " onActivityCreated");
         tvFragment.setText("This is Fragment1");
+        getDataFromActivity(getArguments());
+        listener.reply("activity,fragment已接收到信息");
+    }
+
+    private void getDataFromActivity(Bundle bundle) {
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        params.gravity = Gravity.CENTER;
+        params.topMargin = 20;
+        String text = bundle.getString("text", "没有数据");
+        TextView textView = new TextView(getActivity());
+        textView.setText(text);
+        llFragment.addView(textView, params);
     }
 
     //Fragment被添加到Activity时调用，只调用一次
