@@ -83,6 +83,9 @@
 
         <activity android:name=".activity.FragmentTestActivity">
         </activity>
+
+        <activity android:name=".activity.ViewFlipperActivity">
+        </activity>
     </application>
 
 </manifest>
