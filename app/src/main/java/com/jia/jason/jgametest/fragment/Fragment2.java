@@ -21,7 +21,7 @@ public class Fragment2 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_test_layotu, container, false);
+        View view = inflater.inflate(R.layout.fragment_test_layotu2, container, false);
         tvFragment = (TextView) view.findViewById(R.id.fragment_tv);
         return view;
     }

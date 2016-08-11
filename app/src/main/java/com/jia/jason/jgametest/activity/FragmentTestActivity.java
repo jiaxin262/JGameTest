@@ -2,17 +2,22 @@ package com.jia.jason.jgametest.activity;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentTransaction;
+import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.view.PagerTabStrip;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.jia.jason.jgametest.R;
+import com.jia.jason.jgametest.adapter.FragmentsAdapter;
 import com.jia.jason.jgametest.fragment.Fragment1;
 import com.jia.jason.jgametest.fragment.Fragment2;
 import com.jia.jason.jgametest.fragment.Fragment3;
 import com.jia.jason.jgametest.fragment.Fragment4;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by xin.jia
@@ -27,6 +32,12 @@ public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnC
     Fragment fragment3;
     Fragment fragment4;
 
+    ViewPager fragmentViewPager;
+    FragmentPagerAdapter fragmentsAdapter;
+    PagerTabStrip tabs;
+    List<Fragment> fragmentList = new ArrayList<>();
+    List<String> titleList = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,14 +51,28 @@ public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnC
         fragment3 = new Fragment3();
         fragment4 = new Fragment4();
 
-        Bundle bundle = new Bundle();
-        bundle.putString("text", "来自Activity的问候");
-        fragment1.setArguments(bundle);
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.add(R.id.fragment_container_ll, fragment1);
-        transaction.commit();
-        currentFragment = fragment1;
-        fragment1.setListener(this);
+//        Bundle bundle = new Bundle();
+//        bundle.putString("text", "来自Activity的问候");
+//        fragment1.setArguments(bundle);
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        transaction.add(R.id.fragment_container_ll, fragment1);
+//        transaction.commit();
+//        currentFragment = fragment1;
+//        fragment1.setListener(this);
+
+        titleList.add("First-F");
+        titleList.add("Sec-F");
+        titleList.add("Third-F");
+        titleList.add("Fourth-F");
+        fragmentViewPager = (ViewPager) findViewById(R.id.vp_fragment_container);
+        fragmentList.add(fragment1);
+        fragmentList.add(fragment2);
+        fragmentList.add(fragment3);
+        fragmentList.add(fragment4);
+        fragmentsAdapter = new FragmentsAdapter(getSupportFragmentManager(), fragmentList, titleList);
+        fragmentViewPager.setAdapter(fragmentsAdapter);
+        tabs = (PagerTabStrip) findViewById(R.id.fragment_vp_ts);
+        tabs.setDrawFullUnderline(false);
     }
 
     @Override
@@ -69,14 +94,14 @@ public class FragmentTestActivity extends BaseActivity implements RadioGroup.OnC
     }
 
     private void changeFragment(Fragment fragment) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        if (!getSupportFragmentManager().getFragments().contains(fragment)) {
-            transaction.add(R.id.fragment_container_ll, fragment);
-        }
-        transaction.hide(currentFragment);
-        transaction.show(fragment);
-        transaction.commit();
-        currentFragment = fragment;
+//        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+//        if (!getSupportFragmentManager().getFragments().contains(fragment)) {
+//            transaction.add(R.id.fragment_container_ll, fragment);
+//        }
+//        transaction.hide(currentFragment);
+//        transaction.show(fragment);
+//        transaction.commit();
+//        currentFragment = fragment;
     }
 
     @Override

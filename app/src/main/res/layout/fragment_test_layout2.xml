@@ -56,11 +56,25 @@
             android:gravity="center"/>
     </RadioGroup>
 
-    <LinearLayout
-        android:id="@+id/fragment_container_ll"
+    <!--<LinearLayout-->
+        <!--android:id="@+id/fragment_container_ll"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_above="@+id/rg_fragments">-->
+    <!--</LinearLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_above="@+id/rg_fragments">
-    </LinearLayout>
+
+        <android.support.v4.view.PagerTabStrip
+            android:id="@+id/fragment_vp_ts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top">
+        </android.support.v4.view.PagerTabStrip>
+    </android.support.v4.view.ViewPager>
 </RelativeLayout>

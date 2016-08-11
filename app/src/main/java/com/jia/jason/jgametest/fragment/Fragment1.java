@@ -25,7 +25,7 @@ import java.util.List;
  * Created by xin.jia
  * since 2016/8/9
  */
-public class Fragment1 extends Fragment {
+public class Fragment1 extends Fragment implements ViewPager.OnPageChangeListener{
 
     TextView tvFragment;
     LinearLayout llFragment;
@@ -37,6 +37,21 @@ public class Fragment1 extends Fragment {
     List<View> viewList = new ArrayList<>();
     PagerAdapter pagerAdapter;
     List<String> titleList = new ArrayList<>();
+
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+        Log.e("f1_vp_onPageScrolled", position+"-"+positionOffset+"-"+positionOffsetPixels);
+    }
+
+    @Override
+    public void onPageSelected(int position) {
+        Log.e("f1_vp_onPageSelected", position+"");
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {
+        Log.e("f1_vp_onPageScrollChang", state+"");
+    }
 
     public interface ReplyListener {
         public void reply(String string);
@@ -65,9 +80,12 @@ public class Fragment1 extends Fragment {
         super.onActivityCreated(savedInstanceState);
         Log.e("Fragment1:", " onActivityCreated");
         tvFragment.setText("This is Fragment1");
-        getDataFromActivity(getArguments());
-        listener.reply("activity,fragment已接收到信息");
+        //getDataFromActivity(getArguments());
+//        listener.reply("activity,fragment已接收到信息");
 
+        if (titleList.size() > 0) {
+            titleList.clear();
+        }
         titleList.add("First");
         titleList.add("Sec");
         titleList.add("Third");
@@ -76,6 +94,9 @@ public class Fragment1 extends Fragment {
         View view2 = View.inflate(getActivity(), R.layout.view_pager_view2, null);
         View view3 = View.inflate(getActivity(), R.layout.view_pager_view3, null);
         View view4 = View.inflate(getActivity(), R.layout.view_pager_view4, null);
+        if (viewList.size() > 0) {
+            viewList.clear();
+        }
         viewList.add(view1);
         viewList.add(view2);
         viewList.add(view3);
@@ -83,6 +104,7 @@ public class Fragment1 extends Fragment {
 
         pagerAdapter = new ViewsAdapter(viewList, titleList);
         viewPager.setAdapter(pagerAdapter);
+        viewPager.addOnPageChangeListener(this);
 
         tabs.setBackgroundColor(getResources().getColor(R.color.atom_flight_text_gray_trans));
         tabs.setDrawFullUnderline(false);
