@@ -1,4 +1,7 @@
 package com.jia.jason.jgametest.helper;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileInputStream;
@@ -26,7 +29,7 @@ public class Question1 {
     private int classTotalCount;
 
     public static void main(String[] args) {
-        new Question1().countChars(new File("D:/m_adr_atom_flight/SRC/app/src/main/java/com/mqunar/atom/flight"));
+        new Question1().countChars(new File("E:/anr_8_18.txt"));
     }
 
 
@@ -36,9 +39,9 @@ public class Question1 {
                 ArrayList<File> fileList = new ArrayList<File>();
                 fileList = reachFiles(file, fileList);
                 for (File tempFile : fileList) {
-                    if (!tempFile.getName().contains("FlightResUtils")) {
+                    //if (!tempFile.getName().contains("FlightResUtils")) {
                         findTargetFile(tempFile);
-                    }
+                    //}
                 }
                 printResult(targetFile);
             }

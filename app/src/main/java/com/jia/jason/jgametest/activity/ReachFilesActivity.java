@@ -18,7 +18,7 @@ public class ReachFilesActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.list_view_test);
+        setContentView(R.layout.reach_files_layout);
 
         TextView textView = (TextView) findViewById(R.id.start_reach_files);
         textView.setOnClickListener(this);
