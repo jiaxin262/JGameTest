@@ -5,7 +5,6 @@ package com.jia.jason.jgametest.util;
  * since 2016/8/19
  */
 import com.jia.jason.jgametest.json.Fastjson;
-import com.jia.jason.jgametest.json.Jackson;
 import com.jia.jason.jgametest.json.JsonwireException;
 
 import java.util.List;
@@ -26,7 +25,7 @@ public class JsonUtils {
                     throw new IllegalArgumentException("no such parser found");
                 }
 
-                parser = new Jackson();
+                //parser = new Jackson();
             }
 
         } catch (Exception var2) {
@@ -69,7 +68,7 @@ public class JsonUtils {
             } catch (ClassNotFoundException var3) {
                 try {
                     e = Class.forName("com.fasterxml.jackson.databind.ObjectMapper");
-                    this.ip = new Jackson();
+                    //this.ip = new Jackson();
                 } catch (ClassNotFoundException var2) {
                     if(this.ip == null) {
                         throw new NullPointerException("No json found");

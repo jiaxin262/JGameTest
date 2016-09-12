@@ -54,7 +54,7 @@ public class ListViewAndOtherActivity extends BaseActivity implements AbsListVie
             }
         });
         listView.setAdapter(adapter);
-        //listView.setOnScrollListener(this);
+        listView.setOnScrollListener(this);
 
     }
 
