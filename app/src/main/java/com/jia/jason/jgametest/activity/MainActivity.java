@@ -2,8 +2,14 @@ package com.jia.jason.jgametest.activity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.TextView;
 import com.jia.jason.jgametest.R;
+import com.jia.jason.jgametest.adapter.IndexItemAdapter;
+import com.jia.jason.jgametest.model.IndexItemModel;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends BaseActivity {
 
@@ -27,10 +33,24 @@ public class MainActivity extends BaseActivity {
     private TextView tvFragmentTest;
     private TextView tvViewFlipper;
 
+    private GridView indexGridView;
+    IndexItemAdapter indexItemAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        indexGridView = (GridView) findViewById(R.id.index_grid_view);
+        indexItemAdapter = new IndexItemAdapter(this, getIndexItems());
+        indexItemAdapter.setOnClickAction(new Action<Class<? extends BaseActivity>>() {
+            @Override
+            public void execute(Class<? extends BaseActivity> args) {
+                jStartActivity(args);
+            }
+        });
+        indexGridView.setAdapter(indexItemAdapter);
+
 
         FlyBall = (TextView) findViewById(R.id.fly_ball);
         FingerPath = (TextView) findViewById(R.id.finger_path);
@@ -71,6 +91,12 @@ public class MainActivity extends BaseActivity {
         tvProgressBar.setOnClickListener(this);
         tvFragmentTest.setOnClickListener(this);
         tvViewFlipper.setOnClickListener(this);
+    }
+
+    private List<IndexItemModel> getIndexItems() {
+        List<IndexItemModel> indexItemModels = new ArrayList<>();
+
+        return indexItemModels;
     }
 
     @Override
