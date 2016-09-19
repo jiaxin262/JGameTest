@@ -20,11 +20,13 @@ import java.util.List;
  */
 public class IndexItemAdapter extends BaseAdapter {
 
+    private Context context;
     private LayoutInflater inflater;
     private List<IndexItemModel> indexItems;
     private Action<Class<? extends BaseActivity>> onClickAction;
 
     public IndexItemAdapter(Context context, List<IndexItemModel> indexItems) {
+        this.context = context;
         this.indexItems = indexItems;
         this.inflater = LayoutInflater.from(context);
     }
@@ -57,6 +59,7 @@ public class IndexItemAdapter extends BaseAdapter {
         }
         final IndexItemModel item = (IndexItemModel) getItem(i);
         holder.itemName.setText(item.getItemName());
+        holder.itemName.setBackgroundColor(item.getBgColor());
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

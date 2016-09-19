@@ -1,5 +1,6 @@
 package com.jia.jason.jgametest.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.GridView;
 import com.jia.jason.jgametest.R;
@@ -9,6 +10,7 @@ import com.jia.jason.jgametest.model.IndexItemModel;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class MainActivity extends BaseActivity {
 
@@ -38,10 +40,18 @@ public class MainActivity extends BaseActivity {
             IndexItemModel indexItemModel = new IndexItemModel();
             indexItemModel.setItemName(indexItemEnums.getItemName());
             indexItemModel.setActivityClass(indexItemEnums.getClassName());
+            indexItemModel.setBgColor(getAnyColor());
             indexItemModelList.add(indexItemModel);
         }
         return indexItemModelList;
     }
 
+    private int getAnyColor(){
+        int[] colors = new int[]{
+                Color.RED, Color.BLACK, Color.BLUE, Color.CYAN, Color.DKGRAY,
+                Color.MAGENTA, Color.GREEN, Color.MAGENTA, Color.YELLOW, Color.CYAN,
+        };
+        return colors[new Random().nextInt(10)];
+    }
 
 }
