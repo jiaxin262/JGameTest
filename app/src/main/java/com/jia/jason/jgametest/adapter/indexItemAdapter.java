@@ -56,11 +56,11 @@ public class IndexItemAdapter extends BaseAdapter {
             holder = (ContentHolder) view.getTag();
         }
         final IndexItemModel item = (IndexItemModel) getItem(i);
-        holder.itemName.setText(item.itemName);
+        holder.itemName.setText(item.getItemName());
         view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onClickAction.execute(item.activityClass);
+                onClickAction.execute(item.getActivityClass());
             }
         });
         return view;

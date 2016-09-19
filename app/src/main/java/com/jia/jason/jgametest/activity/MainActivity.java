@@ -1,11 +1,10 @@
 package com.jia.jason.jgametest.activity;
 
 import android.os.Bundle;
-import android.view.View;
 import android.widget.GridView;
-import android.widget.TextView;
 import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.adapter.IndexItemAdapter;
+import com.jia.jason.jgametest.model.IndexItemEnums;
 import com.jia.jason.jgametest.model.IndexItemModel;
 
 import java.util.ArrayList;
@@ -13,27 +12,6 @@ import java.util.List;
 
 public class MainActivity extends BaseActivity {
 
-    private TextView FlyBall;
-    private TextView FingerPath;
-    private TextView reachFiles;
-    private TextView gBall;
-    private TextView ListViewContainer;
-    private TextView ListViewTest;
-    private TextView jLunarLander;
-    private TextView ListViewAndOther;
-    private TextView gravitySensor;
-    private TextView otaTest;
-    private TextView tvAutoComplete;
-    private TextView tvToggleButton;
-    private TextView tvListViewAdapter;
-    private TextView tvGridView;
-    private TextView tvDrawableTest;
-    private TextView tvDrawableState;
-    private TextView tvProgressBar;
-    private TextView tvFragmentTest;
-    private TextView tvViewFlipper;
-
-    private GridView indexGridView;
     IndexItemAdapter indexItemAdapter;
 
     @Override
@@ -41,7 +19,7 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        indexGridView = (GridView) findViewById(R.id.index_grid_view);
+        GridView indexGridView = (GridView) findViewById(R.id.index_grid_view);
         indexItemAdapter = new IndexItemAdapter(this, getIndexItems());
         indexItemAdapter.setOnClickAction(new Action<Class<? extends BaseActivity>>() {
             @Override
@@ -51,117 +29,19 @@ public class MainActivity extends BaseActivity {
         });
         indexGridView.setAdapter(indexItemAdapter);
 
-
-        FlyBall = (TextView) findViewById(R.id.fly_ball);
-        FingerPath = (TextView) findViewById(R.id.finger_path);
-        reachFiles = (TextView) findViewById(R.id.reach_files);
-        gBall = (TextView) findViewById(R.id.g_ball);
-        ListViewContainer = (TextView) findViewById(R.id.list_view_container);
-        ListViewTest = (TextView) findViewById(R.id.list_view_test);
-        jLunarLander = (TextView) findViewById(R.id.j_lunar_lander);
-        ListViewAndOther = (TextView) findViewById(R.id.list_view_and_other);
-        gravitySensor = (TextView) findViewById(R.id.gravity_sensor);
-        otaTest = (TextView) findViewById(R.id.ota_test);
-        tvAutoComplete = (TextView) findViewById(R.id.auto_complete_text);
-        tvToggleButton = (TextView) findViewById(R.id.tv_toggleButton);
-        tvListViewAdapter = (TextView) findViewById(R.id.listView_adapter);
-        tvGridView = (TextView) findViewById(R.id.tv_gridView);
-        tvDrawableTest = (TextView) findViewById(R.id.drawable_test);
-        tvDrawableState = (TextView) findViewById(R.id.tv_drawable_state);
-        tvProgressBar = (TextView) findViewById(R.id.tv_progress_bar);
-        tvFragmentTest = (TextView) findViewById(R.id.tv_fragment_test);
-        tvViewFlipper = (TextView) findViewById(R.id.tv_viewFlipper);
-
-        FlyBall.setOnClickListener(this);
-        FingerPath.setOnClickListener(this);
-        reachFiles.setOnClickListener(this);
-        gBall.setOnClickListener(this);
-        ListViewContainer.setOnClickListener(this);
-        ListViewTest.setOnClickListener(this);
-        jLunarLander.setOnClickListener(this);
-        ListViewAndOther.setOnClickListener(this);
-        gravitySensor.setOnClickListener(this);
-        otaTest.setOnClickListener(this);
-        tvAutoComplete.setOnClickListener(this);
-        tvToggleButton.setOnClickListener(this);
-        tvListViewAdapter.setOnClickListener(this);
-        tvGridView.setOnClickListener(this);
-        tvDrawableTest.setOnClickListener(this);
-        tvDrawableState.setOnClickListener(this);
-        tvProgressBar.setOnClickListener(this);
-        tvFragmentTest.setOnClickListener(this);
-        tvViewFlipper.setOnClickListener(this);
     }
 
     private List<IndexItemModel> getIndexItems() {
-        List<IndexItemModel> indexItemModels = new ArrayList<>();
-
-        return indexItemModels;
-    }
-
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()) {
-            case R.id.fly_ball:
-                jStartActivity(FlyBallActivity.class);
-                break;
-            case R.id.finger_path:
-                jStartActivity(FingerPathActivity.class);
-                break;
-            case R.id.reach_files:
-                jStartActivity(ReachFilesActivity.class);
-                break;
-            case R.id.g_ball:
-                jStartActivity(GBallActivity.class);
-                break;
-            case R.id.list_view_container:
-                jStartActivity(ListViewsActivity.class);
-                break;
-            case R.id.list_view_test:
-                jStartActivity(ListViewTestActivity.class);
-                break;
-            case R.id.j_lunar_lander:
-                jStartActivity(JLunarLanderActivity.class);
-                break;
-            case R.id.list_view_and_other:
-                jStartActivity(ListViewAndOtherActivity.class);
-                break;
-            case R.id.gravity_sensor:
-                jStartActivity(GravitySensorActivity.class);
-                break;
-            case R.id.ota_test:
-                jStartActivity(OtaTestActivity.class);
-                break;
-            case R.id.auto_complete_text:
-                jStartActivity(AutoCompleteTextActivity.class);
-                break;
-            case R.id.tv_toggleButton:
-                jStartActivity(ToggleButtonActivity.class);
-                break;
-            case R.id.listView_adapter:
-                jStartActivity(ListAdapterActivity.class);
-                break;
-            case R.id.tv_gridView:
-                jStartActivity(GridViewActivity.class);
-                break;
-            case R.id.drawable_test:
-                jStartActivity(DrawableTestActivity.class);
-                break;
-            case R.id.tv_drawable_state:
-                jStartActivity(DrawableStateActivity.class);
-                break;
-            case R.id.tv_progress_bar:
-                jStartActivity(ProgressBarActivity.class);
-                break;
-            case R.id.tv_fragment_test:
-                jStartActivity(FragmentTestActivity.class);
-                break;
-            case R.id.tv_viewFlipper:
-                jStartActivity(ViewFlipperActivity.class);
-                break;
-            default:
-                jShowAlertMessage("SORRY", "NOT ACCOMPLISHED!");
+        List<IndexItemModel> indexItemModelList = new ArrayList<>();
+        IndexItemEnums[] indexItemEnumses = IndexItemEnums.values();
+        for (IndexItemEnums indexItemEnums : indexItemEnumses) {
+            IndexItemModel indexItemModel = new IndexItemModel();
+            indexItemModel.setItemName(indexItemEnums.getItemName());
+            indexItemModel.setActivityClass(indexItemEnums.getClassName());
+            indexItemModelList.add(indexItemModel);
         }
+        return indexItemModelList;
     }
+
 
 }

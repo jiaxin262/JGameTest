@@ -30,7 +30,7 @@ import java.util.List;
  * Created by xin.jia
  * since 2016/5/18
  */
-public class OtaTestActivity extends Activity implements AdapterView.OnItemClickListener, FlightTabTagHost.QOnSelectedItemListener{
+public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemClickListener, FlightTabTagHost.QOnSelectedItemListener{
 
     private static final int LIST_VIEW_COUNTS = 3;
     private static final int FIRST_PAGE_SIZE = 1;
