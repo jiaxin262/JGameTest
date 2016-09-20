@@ -27,7 +27,6 @@ public class GCircle {
     private int circleColor; //每个小球的颜色
 
     /**
-     * @定义圆形的构造函数
      * @param x 圆形X坐标
      * @param y 圆形Y坐标
      * @param r 圆形半径
@@ -102,8 +101,6 @@ public class GCircle {
     }
     /**
      * 圆形与屏幕底部的碰撞
-     * @return
-     * @返回true 发生碰撞
      */
     public boolean isCollision() {
         return arc_y + 2 * arc_r + speed_y >= GBallView.screenH;

@@ -15,13 +15,10 @@ import com.jia.jason.jgametest.R;
 
 import java.util.ArrayList;
 
-/**
- * Created by meng.jiang on 2015/8/5.
- */
-public class FlightTabTagHost extends LinearLayout {
+public class JTabTagHost extends LinearLayout {
     private static final int DEFAULT_TEXT_SIZE_DP = 18;
     private Context mContext = null;
-    private ArrayList<FlightTabTagItemView> itemList = null;
+    private ArrayList<JTabTagItemView> itemList = null;
     private int currentIndex = 0;
     private ColorStateList selectedTextColor = null;
     private ColorStateList normalTextColor = null;
@@ -47,17 +44,17 @@ public class FlightTabTagHost extends LinearLayout {
         this.bodyLayoutId = bodylayoutTagId;
     }
 
-    public FlightTabTagHost(Context context) {
+    public JTabTagHost(Context context) {
         this(context, null);
     }
 
-    public FlightTabTagHost(Context context, AttributeSet attrs) {
+    public JTabTagHost(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.mContext = context;
-        itemList = new ArrayList<FlightTabTagItemView>();
+        itemList = new ArrayList<JTabTagItemView>();
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.atom_flight_tabCornerHost);
         textSize = a.getDimensionPixelSize(R.styleable.atom_flight_tabCornerHost_android_textSize,
-                (int) dip2px(FlightTabTagHost.DEFAULT_TEXT_SIZE_DP));
+                (int) dip2px(JTabTagHost.DEFAULT_TEXT_SIZE_DP));
 
         ColorStateList selectedColor = a.getColorStateList(R.styleable.atom_flight_tabCornerHost_atom_flight_selectedTextColor);
         ColorStateList normalColor = a.getColorStateList(R.styleable.atom_flight_tabCornerHost_atom_flight_normalTextColor);
@@ -75,14 +72,9 @@ public class FlightTabTagHost extends LinearLayout {
         a.recycle();
     }
 
-    /**
-     * 刷新背景图片
-     * @author sibeichen
-     * @since 2014-2-19下午5:00:32
-     */
     public void refershBackground() {
         if (itemList != null && itemList.size() > 0) {
-            FlightTabTagItemView v = null;
+            JTabTagItemView v = null;
             int startIndex = 0;
             int endIndex = 0;
             for (int i = 0; i < itemList.size(); i++) {
@@ -131,7 +123,7 @@ public class FlightTabTagHost extends LinearLayout {
 
     public void addItem(final TabItem tabItem, final int cruTextSize) {
         this.textSize = cruTextSize;
-        final FlightTabTagItemView siv = new FlightTabTagItemView(mContext, tabItem.nickName, this.getOrientation(),
+        final JTabTagItemView siv = new JTabTagItemView(mContext, tabItem.nickName, this.getOrientation(),
                 textSize, normalTextColor, selectedTextColor);
         siv.setTabName(tabItem.name);
         siv.setLayoutTagId(tabItem.layoutTagId);
@@ -187,10 +179,6 @@ public class FlightTabTagHost extends LinearLayout {
         }
     }
 
-    /**
-     * 设置选中，但是不触发Listener
-     * @param index
-     */
     public void setCurrentIndexButNotCallListener(int index){
         if (itemList != null) {
             for (int i = 0; i < itemList.size(); i++) {

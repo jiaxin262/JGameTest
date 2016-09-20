@@ -11,14 +11,12 @@ import com.jia.jason.jgametest.R;
  */
 public class DrawableState2Activity extends BaseActivity {
 
-    private TextView tvDraw;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.item_layout);
 
-        tvDraw = (TextView) findViewById(R.id.textView);
+        TextView tvDraw = (TextView) findViewById(R.id.textView);
         tvDraw.setBackgroundResource(R.drawable.jason_shape);
 
     }

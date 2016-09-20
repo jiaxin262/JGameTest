@@ -16,10 +16,7 @@ import android.widget.TextView;
 import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.helper.BitmapHelper;
 
-/**
- * Created by meng.jiang on 2015/8/5.
- */
-public class FlightTabTagItemView extends LinearLayout {
+public class JTabTagItemView extends LinearLayout {
     private View tabCursor;
     protected Context mContext;
     private int index;
@@ -33,8 +30,8 @@ public class FlightTabTagItemView extends LinearLayout {
 
     private boolean isShowRed = false;
 
-    public FlightTabTagItemView(Context context, String nickName, int orientation, float textSize,
-                                ColorStateList normalTextColor, ColorStateList selectedTextColor) {
+    public JTabTagItemView(Context context, String nickName, int orientation, float textSize,
+                           ColorStateList normalTextColor, ColorStateList selectedTextColor) {
         this(context, null);
         this.mContext = context;
         this.selectedTextColor = selectedTextColor;
@@ -54,7 +51,7 @@ public class FlightTabTagItemView extends LinearLayout {
 
     }
 
-    public FlightTabTagItemView(Context context, AttributeSet attrs) {
+    public JTabTagItemView(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -112,10 +109,6 @@ public class FlightTabTagItemView extends LinearLayout {
         this.layoutTagId = layoutTagId;
     }
 
-    /**
-     * 设置tab的内容
-     * @param tabName
-     */
     public void setTabName(CharSequence tabName) {
         tvTabName.setText(tabName);
     }

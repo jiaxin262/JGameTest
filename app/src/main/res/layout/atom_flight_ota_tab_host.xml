@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jia.jason.jgametest.view.FlightTabTagHost xmlns:android="http://schemas.android.com/apk/res/android"
+<com.jia.jason.jgametest.view.JTabTagHost xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/atom_flight_tbv"
     android:layout_width="fill_parent"

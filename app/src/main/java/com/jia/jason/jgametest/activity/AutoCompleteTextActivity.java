@@ -13,14 +13,12 @@ import com.jia.jason.jgametest.R;
  */
 public class AutoCompleteTextActivity extends BaseActivity {
 
-    private String[] countries;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.auto_complete_layout);
 
-        countries = getResources().getStringArray(R.array.countries);
+        String[] countries = getResources().getStringArray(R.array.countries);
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,  android.R.layout.simple_dropdown_item_1line, countries);
         AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.tv_autoComplete);
         autoCompleteTextView.setThreshold(1);

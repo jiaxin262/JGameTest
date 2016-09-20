@@ -1,6 +1,4 @@
 package com.jia.jason.jgametest.helper;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;

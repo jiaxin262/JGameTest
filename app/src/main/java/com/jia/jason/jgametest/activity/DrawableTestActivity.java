@@ -1,6 +1,5 @@
 package com.jia.jason.jgametest.activity;
 
-import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.widget.TextView;

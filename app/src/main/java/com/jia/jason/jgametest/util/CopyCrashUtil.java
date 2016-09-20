@@ -17,7 +17,6 @@ import java.util.ArrayList;
  */
 public class CopyCrashUtil {
 
-    private static File targetFile;
     private static ArrayList<String> lineList = new ArrayList<String>();
     private static String fileName = getSDPath() +"/" + "crash.text";
 
@@ -38,7 +37,7 @@ public class CopyCrashUtil {
                 for (File tempFile : fileList) {
                     findTargetFile(tempFile);
                 }
-                targetFile = new File(fileName);
+                File targetFile = new File(fileName);
                 printResult(targetFile);
                 return true;
             }

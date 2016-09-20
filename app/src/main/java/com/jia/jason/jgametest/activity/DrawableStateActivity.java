@@ -3,7 +3,6 @@ package com.jia.jason.jgametest.activity;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -17,7 +16,6 @@ import com.jia.jason.jgametest.R;
  */
 public class DrawableStateActivity extends BaseActivity {
 
-    private TextView tvDraw;
     private LinearLayout llDrawableState;
 
     @Override
@@ -26,7 +24,7 @@ public class DrawableStateActivity extends BaseActivity {
         setContentView(R.layout.drawable_state_layout);
 
         llDrawableState = (LinearLayout) findViewById(R.id.ll_drawable_state);
-        tvDraw = (TextView) findViewById(R.id.tv_drawable_state);
+        TextView tvDraw = (TextView) findViewById(R.id.tv_drawable_state);
         tvDraw.setBackgroundResource(R.drawable.jason_shape);
         GradientDrawable gd1 = (GradientDrawable) tvDraw.getBackground();
         gd1.setColor(Color.RED);

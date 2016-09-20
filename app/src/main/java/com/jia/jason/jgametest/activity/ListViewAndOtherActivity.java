@@ -2,13 +2,10 @@ package com.jia.jason.jgametest.activity;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.LinearLayout;
-import android.widget.ListAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.adapter.JListViewAdapter;

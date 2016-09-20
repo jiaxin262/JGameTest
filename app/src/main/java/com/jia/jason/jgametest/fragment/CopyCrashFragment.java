@@ -26,8 +26,7 @@ public class CopyCrashFragment extends Fragment implements View.OnClickListener 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.atom_flight_copy_crash, container, false);
-        return view;
+        return inflater.inflate(R.layout.atom_flight_copy_crash, container, false);
     }
 
     @Override

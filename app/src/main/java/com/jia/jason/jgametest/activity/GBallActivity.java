@@ -1,7 +1,6 @@
 package com.jia.jason.jgametest.activity;
 
 import android.os.Bundle;
-import android.view.Window;
 import com.jia.jason.jgametest.view.GBallView;
 
 /**

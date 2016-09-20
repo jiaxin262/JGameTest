@@ -512,8 +512,6 @@ public class LunarView extends SurfaceView implements SurfaceHolder.Callback {
 
         /**
          * Sets the current difficulty.
-         *
-         * @param difficulty
          */
         public void setDifficulty(int difficulty) {
             synchronized (mSurfaceHolder) {

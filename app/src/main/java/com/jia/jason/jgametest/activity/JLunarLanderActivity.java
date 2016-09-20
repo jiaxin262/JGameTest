@@ -6,7 +6,6 @@ import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.view.JLunarView;
-import com.jia.jason.jgametest.view.LunarView;
 
 /**
  * Created by xin.jia

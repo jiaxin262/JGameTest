@@ -109,26 +109,26 @@
     <declare-styleable name="atom_flight_RoundProgressBar">
         <attr name="atom_flight_roundColor" format="color" />
         <attr name="atom_flight_roundProgressColor" format="color" />
-        <attr name="atom_flight_roundWidth" format="dimension"></attr>
+        <attr name="atom_flight_roundWidth" format="dimension"/>
         <attr name="atom_flight_textColor" format="color" />
         <attr name="atom_flight_textSize" format="dimension" />
-        <attr name="atom_flight_max" format="integer"></attr>
-        <attr name="atom_flight_current_progress" format="integer"></attr>
-        <attr name="atom_flight_startAngle" format="integer"></attr>
-        <attr name="atom_flight_textIsDisplayable" format="boolean"></attr>
+        <attr name="atom_flight_max" format="integer"/>
+        <attr name="atom_flight_current_progress" format="integer"/>
+        <attr name="atom_flight_startAngle" format="integer"/>
+        <attr name="atom_flight_textIsDisplayable" format="boolean"/>
         <attr name="atom_flight_style">
-            <enum name="STROKE" value="0"></enum>
-            <enum name="FILL" value="1"></enum>
+            <enum name="STROKE" value="0"/>
+            <enum name="FILL" value="1"/>
         </attr>
         <attr name="atom_flight_showStyle">
-            <enum name="PERCENTAGE" value="0"></enum>
-            <enum name="CURRENT_PROGRESS" value="1"></enum>
+            <enum name="PERCENTAGE" value="0"/>
+            <enum name="CURRENT_PROGRESS" value="1"/>
         </attr>
     </declare-styleable>
     <!-- 交叉推荐tagView -->
     <declare-styleable name="atom_flight_BizRecTag">
         <attr name="atom_flight_backgroundType">
-            <enum name="RED" value="0"></enum>
+            <enum name="RED" value="0"/>
         </attr>
     </declare-styleable>
     <declare-styleable name="atom_flight_ItemLayout">

@@ -2,22 +2,15 @@ package com.jia.jason.jgametest.view;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.os.Handler;
 import android.support.v4.view.GestureDetectorCompat;
 import android.util.AttributeSet;
-import android.util.Log;
-import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
-import android.view.VelocityTracker;
 import android.view.View;
 import android.view.ViewConfiguration;
 import android.widget.AbsListView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 /**
  * Created by xin.jia

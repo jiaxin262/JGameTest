@@ -1,6 +1,5 @@
 package com.jia.jason.jgametest.activity;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.text.SpannableString;
 import android.text.Spanned;
@@ -13,13 +12,12 @@ import android.widget.AdapterView;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.helper.BitmapHelper;
 import com.jia.jason.jgametest.model.JListItem;
-import com.jia.jason.jgametest.view.FlightTabTagHost;
+import com.jia.jason.jgametest.view.JTabTagHost;
 import com.jia.jason.jgametest.view.JListViewAdapter;
 import com.jia.jason.jgametest.view.SlideLayoutContainer;
 
@@ -30,7 +28,7 @@ import java.util.List;
  * Created by xin.jia
  * since 2016/5/18
  */
-public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemClickListener, FlightTabTagHost.QOnSelectedItemListener{
+public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemClickListener, JTabTagHost.QOnSelectedItemListener{
 
     private static final int LIST_VIEW_COUNTS = 3;
     private static final int FIRST_PAGE_SIZE = 1;
@@ -47,7 +45,7 @@ public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemC
     private View continuePullLine;
     private View continuePullView, continuePullFooterLine;  //两页之间文案layout及左右的横线，用于添加在ListView的footer中
     private TextView tvContinuePullFooter;
-    private FlightTabTagHost tbv;
+    private JTabTagHost tbv;
 
     private List<ListView> otaListViewPages0;
     private List<ListView> otaListViewPages1;
@@ -135,7 +133,7 @@ public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemC
     }
 
     private void initListView(int layer, List<ListView> otaListViewPages) {
-        tbv = (FlightTabTagHost) getLayoutInflater().inflate(R.layout.atom_flight_ota_tab_host, null);
+        tbv = (JTabTagHost) getLayoutInflater().inflate(R.layout.atom_flight_ota_tab_host, null);
         tbv.setSelectedListener(this);
         tbv.setbodyLayoutId(layer == 0 ? R.id.atom_flight_tbv_container_first : R.id.atom_flight_tbv_container_second);
         LinearLayout.LayoutParams tbvLayoutParam = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, getResources().getDimensionPixelOffset(R.dimen.atom_flight_otatab_height));
@@ -154,7 +152,7 @@ public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemC
         }
         for (int i = 0; i < otaListViewPages.size(); i ++) {
             f.addView(otaListViewPages.get(i));
-            tbv.addItem(new FlightTabTagHost.TabItem(titles[i], "", i + 1, otaListViewPages.get(i)), BitmapHelper.px(14));
+            tbv.addItem(new JTabTagHost.TabItem(titles[i], "", i + 1, otaListViewPages.get(i)), BitmapHelper.px(14));
         }
         tbv.setCurrentIndex(1);
     }
