@@ -19,6 +19,7 @@ import android.view.SurfaceView;
  * since 2016/2/27
  */
 public class GravitySensorView extends SurfaceView implements SurfaceHolder.Callback, Runnable{
+
     public Context context;
     private Thread th = new Thread(this);
     private SurfaceHolder sfh;
@@ -29,6 +30,7 @@ public class GravitySensorView extends SurfaceView implements SurfaceHolder.Call
     private SensorEventListener mySensorListener;
     private int arc_x, arc_y;// 圆形的x,y位置
     private float x = 0, y = 0, z = 0;
+
     public GravitySensorView(Context context) {
         super(context);
         this.context = context;
@@ -54,7 +56,7 @@ public class GravitySensorView extends SurfaceView implements SurfaceHolder.Call
         mySensorListener = new SensorEventListener() {
             @Override
             //传感器获取值发生改变时在响应此函数
-            public void onSensorChanged(SensorEvent event) {//备注1
+            public void onSensorChanged(SensorEvent event) {
                 //传感器获取值发生改变，在此处理
                 x = event.values[0]; //手机横向翻滚
                 //x>0 说明当前手机左翻 x<0右翻
@@ -62,13 +64,13 @@ public class GravitySensorView extends SurfaceView implements SurfaceHolder.Call
                 //y>0 说明当前手机下翻 y<0上翻
                 z = event.values[2]; //屏幕的朝向
                 //z>0 手机屏幕朝上 z<0 手机屏幕朝下
-                arc_x -= x;//备注2
+                arc_x -= x;
                 arc_y += y;
             }
             @Override
             //传感器的精度发生改变时响应此函数
             public void onAccuracyChanged(Sensor sensor, int accuracy) {
-                // TODO Auto-generated method stub
+
             }
         };
         sm.registerListener(mySensorListener, sensor, SensorManager.SENSOR_DELAY_GAME);
@@ -76,22 +78,23 @@ public class GravitySensorView extends SurfaceView implements SurfaceHolder.Call
         //最后一个参数是监听的传感器速率类型： 一共一下四种形式
         //SENSOR_DELAY_NORMAL  正常
         //SENSOR_DELAY_UI  适合界面
-        //SENSOR_DELAY_GAME  适合游戏  (我们必须选这个呀 哇哈哈~)
+        //SENSOR_DELAY_GAME  适合游戏
         //SENSOR_DELAY_FASTEST  最快
     }
+
     public void surfaceCreated(SurfaceHolder holder) {
         arc_x = this.getWidth() / 2 - 25;
         arc_y = this.getHeight() / 2 - 25;
         th.start();
     }
+
     public void draw() {
         try {
             canvas = sfh.lockCanvas();
             if (canvas != null) {
                 canvas.drawColor(Color.BLACK);
                 paint.setColor(Color.RED);
-                canvas.drawArc(new RectF(arc_x, arc_y, arc_x + 70,
-                        arc_y + 70), 0, 360, true, paint);
+                canvas.drawArc(new RectF(arc_x, arc_y, arc_x + 70, arc_y + 70), 0, 360, true, paint);
                 paint.setColor(Color.YELLOW);
                 paint.setTextSize(30);
                 canvas.drawText("当前重力传感器的值:", arc_x - 70, arc_y-50, paint);
@@ -130,7 +133,7 @@ public class GravitySensorView extends SurfaceView implements SurfaceHolder.Call
                 canvas.drawText(temp_str3, 0, 110, paint);
             }
         } catch (Exception e) {
-            Log.v("Himi", "draw is Error!");
+            Log.v("Jason", "draw is Error!");
         } finally {
             try {
                 if (canvas != null)
@@ -140,9 +143,9 @@ public class GravitySensorView extends SurfaceView implements SurfaceHolder.Call
             }
         }
     }
+
     @Override
     public void run() {
-        // TODO Auto-generated method stub
         while (true) {
             draw();
             try {
@@ -151,8 +154,11 @@ public class GravitySensorView extends SurfaceView implements SurfaceHolder.Call
             }
         }
     }
+
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
     }
+
     public void surfaceDestroyed(SurfaceHolder holder) {
     }
+
 }

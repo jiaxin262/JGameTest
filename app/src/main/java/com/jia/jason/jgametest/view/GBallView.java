@@ -28,8 +28,9 @@ public class GBallView extends SurfaceView implements SurfaceHolder.Callback, Ru
     private Paint paint;
     private boolean flag;
     public static int screenW, screenH;
-    private Vector<GCircle> vc;//这里定义装我们自定义圆形的容器
-    private Random ran;//随即库
+    private Vector<GCircle> vc;//自定义圆形
+    private Random ran;
+
     public GBallView(Context context) {
         super(context);
         this.setKeepScreenOn(true);
@@ -41,6 +42,7 @@ public class GBallView extends SurfaceView implements SurfaceHolder.Callback, Ru
         paint.setAntiAlias(true);
         setFocusable(true);
     }
+
     public void surfaceCreated(SurfaceHolder holder) {
         flag = true;
         th = new Thread(this);
@@ -48,6 +50,7 @@ public class GBallView extends SurfaceView implements SurfaceHolder.Callback, Ru
         screenH = this.getHeight();
         th.start();
     }
+
     public void draw() {
         try {
             canvas = sfh.lockCanvas();
@@ -68,6 +71,7 @@ public class GBallView extends SurfaceView implements SurfaceHolder.Callback, Ru
             }
         }
     }
+
     private void logic() {//主逻辑
         if (vc != null) {//当容器不为空，遍历容器中所有圆形逻辑
             for (int i = 0; i < vc.size(); i++) {
@@ -80,12 +84,7 @@ public class GBallView extends SurfaceView implements SurfaceHolder.Callback, Ru
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN :
-                vc.addElement(new GCircle(
-                        ran.nextInt(this.getWidth()-170), ran.nextInt(500), 20+ran.nextInt(150)));
-                break;
-            case MotionEvent.ACTION_MOVE :
-                break;
-            case MotionEvent.ACTION_UP :
+                vc.addElement(new GCircle(ran.nextInt(this.getWidth()-170), ran.nextInt(500), 20+ran.nextInt(150)));
                 break;
         }
         return true;
@@ -102,9 +101,12 @@ public class GBallView extends SurfaceView implements SurfaceHolder.Callback, Ru
             }
         }
     }
+
     public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
     }
+
     public void surfaceDestroyed(SurfaceHolder holder) {
         flag = false;
     }
+
 }

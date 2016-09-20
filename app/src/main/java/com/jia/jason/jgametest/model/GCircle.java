@@ -19,7 +19,7 @@ public class GCircle {
     private int arc_x, arc_y, arc_r;//圆形的X,Y坐标和半径
     private float speed_x = 2.2f, speed_y = 2.2f;//小球的x、y的速度
     private float vertical_speed;//加速度
-    private float horizontal_speed;//水平加速度,大家自己试着添加吧
+    private float horizontal_speed;
     private final float ACC = 0.335f;//为了模拟加速度的偏移值
     private final float RECESSION = 0.3f;//每次弹起的衰退系数
     private boolean isDown = true;//是否处于下落  状态
