@@ -1,17 +1,11 @@
 package com.jia.jason.jgametest.activity;
 
-import android.graphics.Color;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.MultiAutoCompleteTextView;
-import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
-import com.jia.jason.jgametest.model.StaticTest;
 
 /**
  * Created by xin.jia
@@ -19,23 +13,20 @@ import com.jia.jason.jgametest.model.StaticTest;
  */
 public class AutoCompleteTextActivity extends BaseActivity {
 
-    private AutoCompleteTextView autoCompleteTextView;
-    private MultiAutoCompleteTextView multiAutoCompleteTextView;
-
-    private static final String[] COUNTRIES = {
-            "Belgium", "France", "Italy", "Germany", "Spain", "China", "England", "Edgy", "Jason", "Japan", "JiaXin"
-    };
+    private String[] countries;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.auto_complete_layout);
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,  android.R.layout.simple_dropdown_item_1line, COUNTRIES);
-        autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.tv_autoComplete);
+        countries = getResources().getStringArray(R.array.countries);
+        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this,  android.R.layout.simple_dropdown_item_1line, countries);
+        AutoCompleteTextView autoCompleteTextView = (AutoCompleteTextView) findViewById(R.id.tv_autoComplete);
         autoCompleteTextView.setThreshold(1);
         autoCompleteTextView.setAdapter(arrayAdapter);
-        multiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.tv_multi_autoComplete);
+
+        MultiAutoCompleteTextView multiAutoCompleteTextView = (MultiAutoCompleteTextView) findViewById(R.id.tv_multi_autoComplete);
         multiAutoCompleteTextView.setThreshold(1);
         multiAutoCompleteTextView.setAdapter(arrayAdapter);
         multiAutoCompleteTextView.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());

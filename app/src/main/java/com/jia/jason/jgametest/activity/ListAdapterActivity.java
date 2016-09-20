@@ -25,9 +25,7 @@ public class ListAdapterActivity extends BaseActivity implements AbsListView.OnS
 
     private ListView listView;
     private ArrayAdapter arrayAdapter;
-    private String[] dataSource = {"Jason", "JiaXin", "JX", "Jason", "JiaXin", "J", "Jason", "JiaXin", "J", "Jason", "JiaXin", "J",
-            "Jason", "JiaXin", "JX", "Jason", "JiaXin", "J", "Jason", "JiaXin", "J", "Jason", "JiaXin", "J",
-            "Jason", "JiaXin", "JX", "Jason", "JiaXin", "J", "Jason", "JiaXin", "J", "Jason", "JiaXin", "J"};
+    private String[] dataSource;
 
     private SimpleAdapter simpleAdapter;
     private List<Map<String, Object>> dataList;
@@ -37,6 +35,7 @@ public class ListAdapterActivity extends BaseActivity implements AbsListView.OnS
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_adapter_layout);
 
+        dataSource = getResources().getStringArray(R.array.list_items);
         listView = (ListView) findViewById(R.id.list_view_adapter_lv);
         //arrayAdapter = new ArrayAdapter<String>(this, R.layout.array_adapter_item_layotu, dataSource);
         //listView.setAdapter(arrayAdapter);

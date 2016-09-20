@@ -47,7 +47,7 @@ public class GridViewActivity extends BaseActivity implements AdapterView.OnItem
     private List<String> getGridData() {
         String itemName = "grid";
         gridDataList = new ArrayList<>();
-        for (int i = 0; i < 20; i ++) {
+        for (int i = 0; i < 50; i ++) {
             String item = itemName + i;
             gridDataList.add(item);
         }
