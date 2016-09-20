@@ -19,7 +19,7 @@ import com.jia.jason.jgametest.R;
 public class ProgressBarActivity extends BaseActivity {
 
     ProgressBar progressBar;
-    Button btnIncress;
+    Button btnIncrease;
     Button btnDecrease;
     Button btnReset;
     TextView tvFirstPro;
@@ -45,7 +45,7 @@ public class ProgressBarActivity extends BaseActivity {
 
     private void init() {
         progressBar = (ProgressBar) findViewById(R.id.h_progress_bar);
-        btnIncress = (Button) findViewById(R.id.btn_incress);
+        btnIncrease = (Button) findViewById(R.id.btn_incress);
         btnDecrease = (Button) findViewById(R.id.btn_decrease);
         btnReset = (Button) findViewById(R.id.btn_reset);
         tvFirstPro = (TextView) findViewById(R.id.tv_first_pro);
@@ -53,7 +53,7 @@ public class ProgressBarActivity extends BaseActivity {
         btnDialogPro = (Button) findViewById(R.id.btn_dialog_progress);
 
         setProgressPercentage();
-        btnIncress.setOnClickListener(this);
+        btnIncrease.setOnClickListener(this);
         btnDecrease.setOnClickListener(this);
         btnReset.setOnClickListener(this);
         btnDialogPro.setOnClickListener(this);
@@ -99,10 +99,11 @@ public class ProgressBarActivity extends BaseActivity {
     }
 
     private void setProgressPercentage() {
-        int firstPro = progressBar.getProgress();
-        int secPro = progressBar.getSecondaryProgress();
-        int max = progressBar.getMax();
-        tvFirstPro.setText("第一进度："+(int)(firstPro/(float)max*100)+"%");
-        tvSecPro.setText("第二进度："+(int)(secPro/(float)max*100)+"%");
+        int firstPercent = (int)(progressBar.getProgress()/(float)progressBar.getMax()*100);
+        int secPercent = (int)(progressBar.getSecondaryProgress()/(float)progressBar.getMax()*100);
+        tvFirstPro.setText(getString(R.string.progress_desc,
+                new Object[]{getResources().getString(R.string.first), firstPercent}));
+        tvSecPro.setText(getString(R.string.progress_desc,
+                new Object[]{getResources().getString(R.string.second), secPercent}));
     }
 }

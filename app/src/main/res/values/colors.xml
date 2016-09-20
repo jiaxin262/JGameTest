@@ -46,10 +46,8 @@
     <color name="atom_flight_common_color_gray">#7F8081</color>
     <color name="atom_flight_color_deep_orange">#ffffcf5b</color>
     <color name="atom_flight_color_light_orange">#bf8000</color>
-    <!-- 值机按钮不可用状态 色值-->
     <color name="atom_flight_common_color_not_enable">#c7ced4</color>
     <color name="atom_flight_button_blue_normal">#ff1ba9ba</color>
-    <!-- 值机tab选中和未选中 -->
     <color name="atom_flight_checkin_tab_selected">#1ba9ba</color>
     <!-- ios7 -->
     <color name="atom_flight_background_color_blue">#1ba9ba</color>
@@ -60,7 +58,7 @@
     <color name="atom_flight_has_transparent_white">#99ffffff</color>
     <color name="atom_flight_has_transparent_black">#a5a5a5</color>
     <color name="atom_flight_color_fsb">#076772</color>
-    <!-- 描述性文字的背景色 -->
+
     <color name="atom_flight_des_text_bg_color">#f2f8fb</color>
     <color name="atom_flight_pagebase_lightblue">#f2f8fb</color>
     <color name="atom_flight_text_tabheader_selected">#1ba9ba</color>
@@ -77,7 +75,6 @@
     <color name="atom_flight_common_color_half_white">#C7CED4</color>
     <color name="atom_flight_bg_notice">#fff6ed</color>1
     <color name="atom_flight_color_red">#ff6f26</color>
-    <!--酒店订单状态栏分割线-->
     <color name="atom_flight_vertical_line_color">#99d1d3d4</color>
     <color name="atom_flight_drawable_F2F2F2">#F2F2F2</color>
     <color name="atom_flight_common_color_line">#E8E8E8</color>
@@ -88,7 +85,6 @@
     <!-- 60%透明度的黑色 -->
     <color name="atom_flight_half_transparent_black">#99000000</color>
     <color name="atom_flight_common_color_line_gray">#FFE3E3E3</color>
-    <!--微信红包相关-->
     <color name="atom_flight_background_detail_color_wx_envo">#FFE09D</color>
     <color name="atom_flight_common_color_layout_background1">#FFF2F8FB</color>
     <color name="atom_flight_color_blue">#ff1ba9ba</color>
@@ -99,7 +95,6 @@
     <color name="atom_flight_text_gray">#7f8081</color>
     <color name="atom_flight_text_gray_trans">#7f7f8081</color>
     <color name="atom_flight_button_yellow_normal">#ffff9600</color>
-    <!--限时特惠倒计时颜色-->
     <color name="atom_flight_spring_sale_red">#ffec3f31</color>
     <color name="atom_flight_spring_sale_gray">#ff888888</color>
     <color name="atom_flight_blue_common_color">#1ba9ba</color>
@@ -112,11 +107,8 @@
 
     <color name="atom_flight_bg_order_list_item">#f2f8fb</color>
 
-    <!-- 航班列表页 -->
     <color name="atom_flight_title_bar_text">#ff1ba9ba</color>
-    <!-- 保险选择页底部温馨提示 -->
     <color name="atom_flight_insurance_choose_bottom_tip">#b8b8b8</color>
-    <!-- 国内订单填写页提交按钮背景-->
     <color name="atom_flight_button_orange_normal">#ff9705</color>
     <color name="atom_flight_button_orange_press">#cc7904</color>
     <color name="atom_flight_button_orange_disable">#ff9705</color>
@@ -144,13 +136,11 @@
     <color name="atom_flight_text_tabpanel_normal">#b5b5b5</color>
     <color name="atom_flight_text_tabpanel_pressed">@color/atom_flight_blue_common_color</color>
 
-    <!--大礼包字体颜色-->
     <color name="atom_flight_big_gift_bg_color">#66000000</color>
     <color name="atom_flight_big_gift_text_color">#fff0c9</color>
     <color name="atom_flight_big_gift_btn_bg_color">#ffe8ab</color>
 
     <color name="atom_flight_alpha_nine_five_white">#f2ffffff</color>
-    <!--航班动态bug修复-->
     <color name="atom_flight_status_toptip_bg_normal">#acc3c6</color>
     <color name="atom_flight_status_toptip_text_orange">#ff8205</color>
     <color name="atom_flight_status_toptip_bg_orange">#fff6ed</color>

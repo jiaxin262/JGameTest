@@ -25,4 +25,7 @@
     <string name="message_bad_angle">Bad Angle</string>
 
     <string name="lunar_layout_text_text"> </string>
+    <string name="progress_desc">第%1$s进度：%2$d%%</string>
+    <string name="first">一</string>
+    <string name="second">二</string>
 </resources>
