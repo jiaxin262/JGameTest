@@ -26,7 +26,7 @@ public class ViewFlipperActivity extends BaseActivity {
         }
         viewFlipper.setInAnimation(this, R.anim.right_in);
         viewFlipper.setOutAnimation(this, R.anim.left_out);
-        viewFlipper.setFlipInterval(3000);
+        viewFlipper.setFlipInterval(1500);
         viewFlipper.startFlipping();
     }
 
