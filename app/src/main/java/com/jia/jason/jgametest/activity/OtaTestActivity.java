@@ -136,7 +136,7 @@ public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemC
         tbv = (JTabTagHost) getLayoutInflater().inflate(R.layout.atom_flight_ota_tab_host, null);
         tbv.setSelectedListener(this);
         tbv.setbodyLayoutId(layer == 0 ? R.id.atom_flight_tbv_container_first : R.id.atom_flight_tbv_container_second);
-        LinearLayout.LayoutParams tbvLayoutParam = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, getResources().getDimensionPixelOffset(R.dimen.atom_flight_otatab_height));
+        LinearLayout.LayoutParams tbvLayoutParam = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, BitmapHelper.dip2px(50));
         FrameLayout f = new FrameLayout(this);
         if (layer == 0) {
             firstContainer.addView(tbv, tbvLayoutParam);
@@ -233,9 +233,9 @@ public class OtaTestActivity extends BaseActivity implements AdapterView.OnItemC
             int end = sb.toString().length();
             ss.setSpan(new AbsoluteSizeSpan(12, true), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             if (hasColor) {
-                ss.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.atom_flight_blue_common_color)), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                ss.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.j_balck_and_gray)), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             } else {
-                ss.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.atom_flight_text_secondarytitle)), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+                ss.setSpan(new ForegroundColorSpan(getResources().getColor(R.color.j_bg_gray)), start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
             }
             tbv.setItemLabelByIndex(index, ss);
         }

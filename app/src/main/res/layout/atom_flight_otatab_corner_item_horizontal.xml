@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/atom_flight_llBackGroundCenter"
     android:layout_width="0dp"
-    android:layout_height="@dimen/atom_flight_otatab_height"
+    android:layout_height="50dp"
     android:layout_weight="1"
     android:gravity="center">
 
@@ -17,7 +17,7 @@
 
     <View
         android:id="@+id/atom_flight_tabcursor"
-        android:background="@color/atom_flight_blue_common_color"
+        android:background="@color/j_blue_common_color"
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_alignParentBottom="true"

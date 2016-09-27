@@ -4,7 +4,7 @@
     android:id="@+id/atom_flight_layoutRoot"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/atom_flight_common_bg_color">
+    android:background="@color/j_common_bg_color">
 
     <com.jia.jason.jgametest.view.SlideLayoutContainer
         android:id="@+id/atom_flight_ota_list_layer_container"

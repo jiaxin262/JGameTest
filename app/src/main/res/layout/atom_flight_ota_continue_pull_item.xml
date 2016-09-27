@@ -3,15 +3,15 @@
     android:id="@+id/atom_flight_ota_continue_pull_layout"
     android:layout_width="match_parent"
     android:layout_height="50dp"
-    android:background="@color/atom_flight_common_bg_color">
+    android:background="@color/j_common_bg_color">
 
     <View
         android:id="@+id/atom_flight_ota_continue_pull_line"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/atom_flight_bg_divider"
-        android:layout_marginLeft="@dimen/atom_flight_margin"
-        android:layout_marginRight="@dimen/atom_flight_margin"
+        android:background="@color/j_bg_divider"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
         android:layout_gravity="center"/>
 
     <TextView
@@ -22,6 +22,6 @@
         android:text="继续拖动，分开购买省80元"
         style="@style/atom_flight_ios7Style_lightGrayNormalText"
         android:layout_gravity="center"
-        android:background="@color/atom_flight_common_bg_color"/>
+        android:background="@color/j_common_bg_color"/>
 
 </FrameLayout>

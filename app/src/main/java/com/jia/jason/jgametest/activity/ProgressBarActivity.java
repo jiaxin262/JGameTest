@@ -39,7 +39,10 @@ public class ProgressBarActivity extends BaseActivity {
         setProgressBarIndeterminateVisibility(true);
         setProgress(1000);
 
+        StackTraceElement[] elements = Thread.currentThread().getStackTrace();
+
         init();
+
 
     }
 

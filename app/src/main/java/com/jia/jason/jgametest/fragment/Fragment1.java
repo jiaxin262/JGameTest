@@ -106,7 +106,7 @@ public class Fragment1 extends Fragment implements ViewPager.OnPageChangeListene
         viewPager.setAdapter(pagerAdapter);
         viewPager.addOnPageChangeListener(this);
 
-        tabs.setBackgroundColor(getResources().getColor(R.color.atom_flight_text_gray_trans));
+        tabs.setBackgroundColor(getResources().getColor(R.color.j_balck_and_gray));
         tabs.setDrawFullUnderline(false);
         tabs.setTabIndicatorColor(getResources().getColor(R.color.red));
         tabs.setTextColor(getResources().getColor(R.color.red));

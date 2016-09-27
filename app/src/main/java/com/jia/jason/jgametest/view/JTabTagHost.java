@@ -59,7 +59,7 @@ public class JTabTagHost extends LinearLayout {
         ColorStateList selectedColor = a.getColorStateList(R.styleable.atom_flight_tabCornerHost_atom_flight_selectedTextColor);
         ColorStateList normalColor = a.getColorStateList(R.styleable.atom_flight_tabCornerHost_atom_flight_normalTextColor);
         selectedTextColor = selectedColor == null ? ColorStateList.valueOf(Color.parseColor(getResources().getString(
-                R.color.atom_flight_blue_common_color))) : selectedColor;
+                R.color.j_bg_gray))) : selectedColor;
         normalTextColor = normalColor == null ? ColorStateList.valueOf(Color.BLACK) : normalColor;
 
         mLeftNormalDrawable = a.getDrawable(R.styleable.atom_flight_tabCornerHost_atom_flight_leftNormalBackground);

@@ -86,6 +86,9 @@
 
         <activity android:name=".activity.ViewFlipperActivity">
         </activity>
+
+        <activity android:name=".activity.DrawableAnimationActivity">
+        </activity>
     </application>
 
 </manifest>

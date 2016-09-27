@@ -38,7 +38,7 @@ public class MainActivity extends BaseActivity {
             IndexItemModel indexItemModel = new IndexItemModel();
             indexItemModel.setItemName(indexItemEnums.getItemName());
             indexItemModel.setActivityClass(indexItemEnums.getClassName());
-            indexItemModel.setBgColor(getResources().getColor(R.color.atom_flight_insurance_choose_bottom_tip));
+            indexItemModel.setBgColor(getResources().getColor(R.color.j_balck_and_gray));
             indexItemModelList.add(indexItemModel);
         }
         return indexItemModelList;
