@@ -2,6 +2,7 @@ package com.jia.jason.jgametest.model;
 
 import com.jia.jason.jgametest.activity.AutoCompleteTextActivity;
 import com.jia.jason.jgametest.activity.BaseActivity;
+import com.jia.jason.jgametest.activity.DrawableAnimationActivity;
 import com.jia.jason.jgametest.activity.DrawableStateActivity;
 import com.jia.jason.jgametest.activity.DrawableTestActivity;
 import com.jia.jason.jgametest.activity.FingerPathActivity;
@@ -10,6 +11,7 @@ import com.jia.jason.jgametest.activity.FragmentTestActivity;
 import com.jia.jason.jgametest.activity.GBallActivity;
 import com.jia.jason.jgametest.activity.GravitySensorActivity;
 import com.jia.jason.jgametest.activity.GridViewActivity;
+import com.jia.jason.jgametest.activity.FrescoImageViewActivity;
 import com.jia.jason.jgametest.activity.JLunarLanderActivity;
 import com.jia.jason.jgametest.activity.ListAdapterActivity;
 import com.jia.jason.jgametest.activity.ListViewAndOtherActivity;
@@ -27,6 +29,8 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  */
 public enum IndexItemEnums {
 
+    IMAGEVIEW_TEST("ImageView", FrescoImageViewActivity.class),
+    DRAWABLE_ANIMATION("DrawableAnimation", DrawableAnimationActivity.class),
     PROGRESSBAR_TEST("ProgressBar", ProgressBarActivity.class),
     FRAGMENT_TEST("FragmentTest", FragmentTestActivity.class),
     VIEW_FLIPPER_TEST("ViewFlipper", ViewFlipperActivity.class),
