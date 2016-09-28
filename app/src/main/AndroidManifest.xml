@@ -94,6 +94,9 @@
 
         <activity android:name=".activity.FrescoImageViewActivity">
         </activity>
+
+        <activity android:name=".activity.LifeCycleActivity">
+        </activity>
     </application>
 
 </manifest>

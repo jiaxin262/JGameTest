@@ -13,6 +13,7 @@ import com.jia.jason.jgametest.activity.GravitySensorActivity;
 import com.jia.jason.jgametest.activity.GridViewActivity;
 import com.jia.jason.jgametest.activity.FrescoImageViewActivity;
 import com.jia.jason.jgametest.activity.JLunarLanderActivity;
+import com.jia.jason.jgametest.activity.LifeCycleActivity;
 import com.jia.jason.jgametest.activity.ListAdapterActivity;
 import com.jia.jason.jgametest.activity.ListViewAndOtherActivity;
 import com.jia.jason.jgametest.activity.ListViewTestActivity;
@@ -29,6 +30,7 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  */
 public enum IndexItemEnums {
 
+    LIFE_CYCLE("LifeCycle", LifeCycleActivity.class),
     IMAGEVIEW_TEST("ImageView", FrescoImageViewActivity.class),
     DRAWABLE_ANIMATION("DrawableAnimation", DrawableAnimationActivity.class),
     PROGRESSBAR_TEST("ProgressBar", ProgressBarActivity.class),
