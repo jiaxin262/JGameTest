@@ -43,8 +43,8 @@ public class JImageDraweeView extends SimpleDraweeView {
     public JImageDraweeView(Context context, AttributeSet attrs) {
         super(context, attrs);
 
-        //testAttrs(attrs);
-        applyAttrs(attrs);
+        testAttrs(attrs);
+        //applyAttrs(attrs);
     }
 
     @Override
@@ -87,10 +87,6 @@ public class JImageDraweeView extends SimpleDraweeView {
                     break;
                 }
             }
-            if (d != null) {
-                GenericDraweeHierarchy hierarchy = getHierarchy();
-                hierarchy.setPlaceholderImage(d);
-            }
             //a.recycle();
         } catch (Exception ex) {
             Log.e("ERROR",ex+"");
@@ -122,6 +118,7 @@ public class JImageDraweeView extends SimpleDraweeView {
         Log.d("attrs.PositionDesc", attrs.getPositionDescription()+"");
         Log.d("attrs.IdAttrResValue", attrs.getIdAttributeResourceValue(0)+"");
         Log.d("attrs.StyleAttribute", attrs.getStyleAttribute()+"");
+        Log.d("attrs.StyleAttribute", attrs.getAttributeResourceValue("http://schemas.android.com/apk/res/android", "src", 0)+"");
 
 
     }
