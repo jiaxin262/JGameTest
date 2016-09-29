@@ -2,6 +2,7 @@ package com.jia.jason.jgametest;
 
 import android.app.Application;
 import android.content.Context;
+import android.graphics.Typeface;
 
 import com.facebook.drawee.backends.pipeline.Fresco;
 
@@ -12,6 +13,7 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 public class JApplication extends Application {
 
     private static Context mContext;
+    private static Typeface iconfont;//图片字体
 
     public JApplication() {
     }
@@ -33,6 +35,13 @@ public class JApplication extends Application {
         } else {
             return mContext;
         }
+    }
+
+    public static Typeface getIconFont() {
+        if (iconfont == null) {
+            iconfont = Typeface.createFromAsset(getContext().getAssets(), "iconfont/j_icon_font.ttf");
+        }
+        return iconfont;
     }
 
 }

@@ -23,6 +23,7 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:23.1.0'
     compile 'com.alibaba:fastjson:1.1.34.android'
+    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha8'
 
     compile 'com.facebook.fresco:fresco:0.12.0'
     // 在 API < 14 上的机器支持 WebP 时，需要添加

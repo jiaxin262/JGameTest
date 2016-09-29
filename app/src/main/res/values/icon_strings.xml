@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="j_main_bottom_search">&#xf407;</string>
+    <string name="j_main_bottom_special">&#xf3bc;</string>
+    <string name="j_main_bottom_service">&#xf3c0;</string>
+    <string name="j_main_bottom_lowPrice">&#xf3c5;</string>
+    <string name="j_main_bottom_order">&#xf3c2;</string>
+    <string name="j_location">&#xf0df;</string>
+    <string name="j_five_pointed_star">&#xf3b3;</string>
+    <!--<string name="j_main_smile">&#xf3be;</string>-->
+    <string name="j_main_change_city">&#xf3c3;</string>
+
+    <string name="j_filter">&#xf0f7;</string>
+    <string name="j_sort_time">&#xf065;</string>
+    <string name="j_sort_price">&#xf3c5;</string>
+    <string name="j_sort_default">&#xf3b8;</string>
+    <string name="j_go_circle">&#xf183;</string>
+    <string name="j_back_circle">&#xf184;</string>
+    <string name="j_non_stop">&#xf553;</string>
+    <!--<string name="j_num_1">&#xf421;</string>
+    <string name="j_num_2">&#xf423;</string>
+    <string name="j_num_3">&#xf425;</string>
+    <string name="j_num_4">&#xf427;</string>
+    <string name="j_num_5">&#xf429;</string>
+    <string name="j_num_6">&#xf42b;</string>
+    <string name="j_num_7">&#xf42d;</string>
+    <string name="j_num_8">&#xf42f;</string>
+    <string name="j_num_9">&#xf431;</string>-->
+
+    <string name="j_fill_contact">&#xf0e2;</string>
+    <string name="j_fill_delete_passenger">&#xf436;</string>
+    <string name="j_detail_category">&#xf07e;</string>
+    <string name="j_detail_share">&#xf0dd;</string>
+    <string name="j_detail_guide">&#xf44d;</string>
+    <string name="j_right_flight">&#xf3e9;</string>
+    <string name="j_left_flight">&#xf3ea;</string>
+
+    <string name="j_single_arrow">&#xf601;</string>
+    <string name="j_double_arrow">&#xf600;</string>
+    <string name="j_collect">&#xf06f;</string>
+    <string name="j_collect_no">&#xf066;</string>
+    <string name="j_hook">&#xf056;</string>
+    <!--
+    <string name="j_arrow_down">&#xf3ca;</string>-->
+    <!--<string name="j_loading">&#xf089;</string>
+
+    <string name="j_unchecked_square">&#xf35f;</string>-->
+    <string name="j_i_circled">&#xf0f6;</string>
+    <string name="j_cross">&#xf3f3;</string>
+    <string name="j_plus_circled">&#xf298;</string>
+    <string name="j_hook_circled">&#xf3f7;</string>
+    <string name="j_hook_circled_black">&#xf3f6;</string>
+    <string name="j_scan">&#xf0f5;</string>
+    <string name="j_select_from_history">&#xf3e3;</string>
+    <string name="j_person_icon">&#xf0eb;</string>
+    <!--<string name="j_hook_circled_black">&#xf3f6;</string>-->
+    <string name="j_circle">&#xf438;</string>
+    <string name="j_edit_pencil">&#xf3d5;</string>
+    <string name="j_i_circled_black">&#xf3f1;</string>
+    <!--<string name="j_arrow_up_small">&#xf027;</string>
+    <string name="j_arrow_down_small">&#xf031;</string>-->
+    <string name="j_label_home">&#xf228;</string>
+    <!--<string name="j_pull_down">&#xf07b;</string>
+    <string name="j_pull_up">&#xf079;</string>
+
+    <string name="j_clear">&#xf093;</string>-->
+    <string name="j_arrow_up_xsmall">&#xf3c6;</string>
+    <string name="j_arrow_down_xsmall">&#xf3c7;</string>
+    <!--<string name="j_selected_icon">&#xf056;</string>-->
+    <string name="j_arrow_right_xsmall">&#xf3c8;</string>
+    <string name="j_arrow_left_L">&#xf3cd;</string>
+    <string name="j_arrow_down_L">&#xf3cb;</string>
+    <!--<string name="j_hook_squared">&#xf496;</string>
+    <string name="j_cross_circled_black">&#xf093;</string>-->
+    <string name="j_question_mark_circled">&#xf0c9;</string>
+</resources>

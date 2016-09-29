@@ -97,6 +97,9 @@
 
         <activity android:name=".activity.LifeCycleActivity">
         </activity>
+
+        <activity android:name=".activity.ConstraintActivity">
+        </activity>
     </application>
 
 </manifest>
