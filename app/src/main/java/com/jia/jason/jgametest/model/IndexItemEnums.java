@@ -22,6 +22,7 @@ import com.jia.jason.jgametest.activity.ListViewsActivity;
 import com.jia.jason.jgametest.activity.OtaTestActivity;
 import com.jia.jason.jgametest.activity.ProgressBarActivity;
 import com.jia.jason.jgametest.activity.ReachFilesActivity;
+import com.jia.jason.jgametest.activity.SIActivity1;
 import com.jia.jason.jgametest.activity.ToggleButtonActivity;
 import com.jia.jason.jgametest.activity.ViewFlipperActivity;
 
@@ -31,6 +32,7 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  */
 public enum IndexItemEnums {
 
+    ActivityTaskTest("ATaskTest", SIActivity1.class),
     CONSTRAINT_LAYOUT("ConstraintLayout", ConstraintActivity.class),
     LIFE_CYCLE("LifeCycle", LifeCycleActivity.class),
     IMAGEVIEW_TEST("ImageView", FrescoImageViewActivity.class),

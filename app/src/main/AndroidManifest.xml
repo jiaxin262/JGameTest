@@ -100,6 +100,16 @@
 
         <activity android:name=".activity.ConstraintActivity">
         </activity>
+
+        <activity android:name=".activity.SIActivity1">
+        </activity>
+
+        <activity android:name=".activity.SIActivity2"
+            android:launchMode="singleInstance">
+        </activity>
+
+        <activity android:name=".activity.SIActivity3">
+        </activity>
     </application>
 
 </manifest>
