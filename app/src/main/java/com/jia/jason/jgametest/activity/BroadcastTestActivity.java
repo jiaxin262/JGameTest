@@ -31,6 +31,11 @@ public class BroadcastTestActivity extends BaseActivity {
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
         Log.d(TAG+"-getActiveNetWorkInfo", connectivityManager.getActiveNetworkInfo().toString());
+
+        //发送广播
+        Intent intent = new Intent("com.jia.jason.jgametest.MY_BROADCAST");
+        sendBroadcast(intent);
+
     }
 
 

@@ -19,7 +19,12 @@ public class BootCompleteReciever extends BroadcastReceiver {
 
     @Override
     public void onReceive(Context context, Intent intent) {
-        Toast.makeText(context, "JGameTest已自动启动", Toast.LENGTH_SHORT).show();
-        Log.e(BroadcastTestActivity.TAG, "JGameTest已自动启动");
+        String action = intent.getAction();
+        if ("com.jia.jason.jgametest.MY_BROADCAST".equals(action)) {
+            Toast.makeText(context, "receive MY_BROADCAST", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(context, "JGameTest已自动启动", Toast.LENGTH_SHORT).show();
+            Log.e(BroadcastTestActivity.TAG, "JGameTest已自动启动");
+        }
     }
 }
