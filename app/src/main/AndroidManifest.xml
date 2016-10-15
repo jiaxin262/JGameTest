@@ -125,6 +125,10 @@
 
         <activity android:name=".activity.BroadcastTestActivity">
         </activity>
+
+        <activity android:name=".activity.FileTestActivity">
+        </activity>
+
     </application>
 
 </manifest>

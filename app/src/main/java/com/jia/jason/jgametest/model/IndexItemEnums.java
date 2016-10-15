@@ -7,6 +7,7 @@ import com.jia.jason.jgametest.activity.ConstraintActivity;
 import com.jia.jason.jgametest.activity.DrawableAnimationActivity;
 import com.jia.jason.jgametest.activity.DrawableStateActivity;
 import com.jia.jason.jgametest.activity.DrawableTestActivity;
+import com.jia.jason.jgametest.activity.FileTestActivity;
 import com.jia.jason.jgametest.activity.FingerPathActivity;
 import com.jia.jason.jgametest.activity.FlyBallActivity;
 import com.jia.jason.jgametest.activity.FragmentTestActivity;
@@ -32,9 +33,9 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
-
-    BroadcastTest("BroadcastTest", BroadcastTestActivity.class),
-    ActivityTaskTest("ATaskTest", SIActivity1.class),
+    FILE_TEST("FileTest", FileTestActivity.class),
+    BROADCAST_TEST("BroadcastTest", BroadcastTestActivity.class),
+    ACTIVITY_TASK_TEST("ATaskTest", SIActivity1.class),
     CONSTRAINT_LAYOUT("ConstraintLayout", ConstraintActivity.class),
     LIFE_CYCLE("LifeCycle", LifeCycleActivity.class),
     IMAGEVIEW_TEST("ImageView", FrescoImageViewActivity.class),

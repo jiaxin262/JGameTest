@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
+import android.support.v4.content.LocalBroadcastManager;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -19,6 +20,7 @@ public class BroadcastTestActivity extends BaseActivity {
     public static final String TAG = "BroadcastTestActivity";
     private IntentFilter intentFilter;
     private NetworkChangeReciever networkChangeReciever;
+    LocalBroadcastManager localBroadcastManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,8 +36,13 @@ public class BroadcastTestActivity extends BaseActivity {
 
         //发送广播
         Intent intent = new Intent("com.jia.jason.jgametest.MY_BROADCAST");
-        sendBroadcast(intent);
+        sendBroadcast(intent);  //发送标准广播
+        sendOrderedBroadcast(intent, null); //发送有序广播
 
+        //本地广播
+        localBroadcastManager = LocalBroadcastManager.getInstance(this);
+        localBroadcastManager.sendBroadcast(intent);
+        localBroadcastManager.registerReceiver(networkChangeReciever, intentFilter);
     }
 
 
@@ -43,6 +50,7 @@ public class BroadcastTestActivity extends BaseActivity {
     protected void onDestroy() {
         super.onDestroy();
         unregisterReceiver(networkChangeReciever);
+        localBroadcastManager.unregisterReceiver(networkChangeReciever);
     }
 
     class NetworkChangeReciever extends BroadcastReceiver {
