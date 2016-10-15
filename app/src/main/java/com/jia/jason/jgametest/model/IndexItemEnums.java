@@ -2,6 +2,7 @@ package com.jia.jason.jgametest.model;
 
 import com.jia.jason.jgametest.activity.AutoCompleteTextActivity;
 import com.jia.jason.jgametest.activity.BaseActivity;
+import com.jia.jason.jgametest.activity.BroadcastTestActivity;
 import com.jia.jason.jgametest.activity.ConstraintActivity;
 import com.jia.jason.jgametest.activity.DrawableAnimationActivity;
 import com.jia.jason.jgametest.activity.DrawableStateActivity;
@@ -32,6 +33,7 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  */
 public enum IndexItemEnums {
 
+    BroadcastTest("BroadcastTest", BroadcastTestActivity.class),
     ActivityTaskTest("ATaskTest", SIActivity1.class),
     CONSTRAINT_LAYOUT("ConstraintLayout", ConstraintActivity.class),
     LIFE_CYCLE("LifeCycle", LifeCycleActivity.class),
