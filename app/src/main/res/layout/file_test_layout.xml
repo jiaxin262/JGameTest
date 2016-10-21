@@ -10,5 +10,15 @@
         android:layout_height="wrap_content"
         android:maxLines="1"
         android:hint="input file name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="input file name" />
+
+    <TextView
+        android:id="@+id/j_file_content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

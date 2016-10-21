@@ -26,4 +26,5 @@
     <string name="progress_desc">第%1$s进度：%2$d%%</string>
     <string name="first">一</string>
     <string name="second">二</string>
+    <string name="from_sp">%s (from sp)</string>
 </resources>

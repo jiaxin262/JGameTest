@@ -14,7 +14,7 @@
         android:theme="@style/pub_fw_Theme_App" >
 
         <receiver android:name=".broadcast.BootCompleteReciever">
-            <intent-filter>
+            <intent-filter android:priority="100">
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
             <intent-filter>
@@ -129,6 +129,8 @@
         <activity android:name=".activity.FileTestActivity">
         </activity>
 
+        <activity android:name=".activity.SPTest">
+        </activity>
     </application>
 
 </manifest>

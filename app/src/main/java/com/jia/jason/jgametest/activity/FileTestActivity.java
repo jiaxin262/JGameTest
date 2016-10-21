@@ -3,6 +3,7 @@ package com.jia.jason.jgametest.activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.widget.EditText;
 
 import com.jia.jason.jgametest.R;
@@ -29,6 +30,10 @@ public class FileTestActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.file_test_layout);
+
+        for (int i = 0; i < 7; i++) {
+            Log.d("i%3=", i%3+"");
+        }
 
         editText = (EditText) findViewById(R.id.j_file_name_et);
         restoreDataFromFile();
