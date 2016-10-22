@@ -131,6 +131,9 @@
 
         <activity android:name=".activity.SPTest">
         </activity>
+
+        <activity android:name=".activity.SQLiteTest">
+        </activity>
     </application>
 
 </manifest>

@@ -26,6 +26,7 @@ import com.jia.jason.jgametest.activity.ProgressBarActivity;
 import com.jia.jason.jgametest.activity.ReachFilesActivity;
 import com.jia.jason.jgametest.activity.SIActivity1;
 import com.jia.jason.jgametest.activity.SPTest;
+import com.jia.jason.jgametest.activity.SQLiteTest;
 import com.jia.jason.jgametest.activity.ToggleButtonActivity;
 import com.jia.jason.jgametest.activity.ViewFlipperActivity;
 
@@ -34,6 +35,7 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    SQLITE_TEST("SQLiteTest", SQLiteTest.class),
     SP_TEST("SharedPrefercesTest", SPTest.class),
     FILE_TEST("FileTest", FileTestActivity.class),
     BROADCAST_TEST("BroadcastTest", BroadcastTestActivity.class),

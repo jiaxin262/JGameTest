@@ -27,4 +27,10 @@
     <string name="first">一</string>
     <string name="second">二</string>
     <string name="from_sp">%s (from sp)</string>
+    <string name="book_price">$%s</string>
+    <string name="book_index">Index</string>
+    <string name="book_name">Name</string>
+    <string name="book_author">Author</string>
+    <string name="book_pages">Pages</string>
+    <string name="book_price_text">Price</string>
 </resources>
