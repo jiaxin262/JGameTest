@@ -21,7 +21,7 @@ import java.util.List;
  * Created by jiaxin on 16/10/22.
  */
 
-public class SQLiteTest extends BaseActivity {
+public class SQLiteTestActivity extends BaseActivity {
 
     private JDatabaseHelper jDatabaseHelper;
     private JBookListViewAdapter booksAdapter;
@@ -110,7 +110,7 @@ public class SQLiteTest extends BaseActivity {
                 bookItem.setPrice(cursor.getDouble(cursor.getColumnIndex(JDatabaseHelper.BOOK_COLUMN_PRICE)));
                 bookList.add(bookItem);
             } while (cursor.moveToNext());
-            booksAdapter = new JBookListViewAdapter(SQLiteTest.this, bookList);
+            booksAdapter = new JBookListViewAdapter(SQLiteTestActivity.this, bookList);
             bookListView.setAdapter(booksAdapter);
         }
         cursor.close();

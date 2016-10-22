@@ -12,7 +12,7 @@ import com.jia.jason.jgametest.R;
  * Created by jiaxin on 16/10/22.
  */
 
-public class SPTest extends BaseActivity {
+public class SPTestActivity extends BaseActivity {
 
     EditText et_editText;
     TextView tv_sp_content;

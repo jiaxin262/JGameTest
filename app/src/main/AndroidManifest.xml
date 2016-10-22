@@ -5,6 +5,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:name=".JApplication"
@@ -129,10 +130,13 @@
         <activity android:name=".activity.FileTestActivity">
         </activity>
 
-        <activity android:name=".activity.SPTest">
+        <activity android:name=".activity.SPTestActivity">
         </activity>
 
-        <activity android:name=".activity.SQLiteTest">
+        <activity android:name=".activity.SQLiteTestActivity">
+        </activity>
+
+        <activity android:name=".activity.ContentProviderTestActivity">
         </activity>
     </application>
 

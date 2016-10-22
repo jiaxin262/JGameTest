@@ -4,6 +4,7 @@ import com.jia.jason.jgametest.activity.AutoCompleteTextActivity;
 import com.jia.jason.jgametest.activity.BaseActivity;
 import com.jia.jason.jgametest.activity.BroadcastTestActivity;
 import com.jia.jason.jgametest.activity.ConstraintActivity;
+import com.jia.jason.jgametest.activity.ContentProviderTestActivity;
 import com.jia.jason.jgametest.activity.DrawableAnimationActivity;
 import com.jia.jason.jgametest.activity.DrawableStateActivity;
 import com.jia.jason.jgametest.activity.DrawableTestActivity;
@@ -25,8 +26,8 @@ import com.jia.jason.jgametest.activity.OtaTestActivity;
 import com.jia.jason.jgametest.activity.ProgressBarActivity;
 import com.jia.jason.jgametest.activity.ReachFilesActivity;
 import com.jia.jason.jgametest.activity.SIActivity1;
-import com.jia.jason.jgametest.activity.SPTest;
-import com.jia.jason.jgametest.activity.SQLiteTest;
+import com.jia.jason.jgametest.activity.SPTestActivity;
+import com.jia.jason.jgametest.activity.SQLiteTestActivity;
 import com.jia.jason.jgametest.activity.ToggleButtonActivity;
 import com.jia.jason.jgametest.activity.ViewFlipperActivity;
 
@@ -35,8 +36,9 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
-    SQLITE_TEST("SQLiteTest", SQLiteTest.class),
-    SP_TEST("SharedPrefercesTest", SPTest.class),
+    CONTENT_PROVIDER("ContentProvider", ContentProviderTestActivity.class),
+    SQLITE_TEST("SQLiteTestActivity", SQLiteTestActivity.class),
+    SP_TEST("SharedPrefercesTest", SPTestActivity.class),
     FILE_TEST("FileTest", FileTestActivity.class),
     BROADCAST_TEST("BroadcastTest", BroadcastTestActivity.class),
     ACTIVITY_TASK_TEST("ATaskTest", SIActivity1.class),
