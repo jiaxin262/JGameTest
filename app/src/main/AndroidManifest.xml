@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:name=".JApplication"
@@ -139,7 +140,11 @@
         <activity android:name=".activity.ContentProviderTestActivity">
         </activity>
 
-        <activity android:name=".activity.NotificationTestActivity"/>
+        <activity android:name=".activity.NotificationTestActivity">
+        </activity>
+
+        <activity android:name=".activity.ImageCaptureTestActivity">
+        </activity>
     </application>
 
 </manifest>
