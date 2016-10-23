@@ -22,6 +22,7 @@ import com.jia.jason.jgametest.activity.ListAdapterActivity;
 import com.jia.jason.jgametest.activity.ListViewAndOtherActivity;
 import com.jia.jason.jgametest.activity.ListViewTestActivity;
 import com.jia.jason.jgametest.activity.ListViewsActivity;
+import com.jia.jason.jgametest.activity.NotificationTestActivity;
 import com.jia.jason.jgametest.activity.OtaTestActivity;
 import com.jia.jason.jgametest.activity.ProgressBarActivity;
 import com.jia.jason.jgametest.activity.ReachFilesActivity;
@@ -36,6 +37,7 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    NOTIFICATION_TEST("NotificationTest", NotificationTestActivity.class),
     CONTENT_PROVIDER("ContentProvider", ContentProviderTestActivity.class),
     SQLITE_TEST("SQLiteTestActivity", SQLiteTestActivity.class),
     SP_TEST("SharedPrefercesTest", SPTestActivity.class),

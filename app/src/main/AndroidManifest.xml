@@ -138,6 +138,8 @@
 
         <activity android:name=".activity.ContentProviderTestActivity">
         </activity>
+
+        <activity android:name=".activity.NotificationTestActivity"/>
     </application>
 
 </manifest>
