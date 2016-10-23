@@ -145,6 +145,9 @@
 
         <activity android:name=".activity.ImageCaptureTestActivity">
         </activity>
+
+        <activity android:name=".activity.HandlerTestActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -16,6 +16,7 @@ import com.jia.jason.jgametest.activity.GBallActivity;
 import com.jia.jason.jgametest.activity.GravitySensorActivity;
 import com.jia.jason.jgametest.activity.GridViewActivity;
 import com.jia.jason.jgametest.activity.FrescoImageViewActivity;
+import com.jia.jason.jgametest.activity.HandlerTestActivity;
 import com.jia.jason.jgametest.activity.ImageCaptureTestActivity;
 import com.jia.jason.jgametest.activity.JLunarLanderActivity;
 import com.jia.jason.jgametest.activity.LifeCycleActivity;
@@ -38,6 +39,7 @@ import com.jia.jason.jgametest.activity.ViewFlipperActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    HANDLER_TEST("HandlerTest", HandlerTestActivity.class),
     IMAGE_CAPTURE_TEST("ImageCapture", ImageCaptureTestActivity.class),
     NOTIFICATION_TEST("NotificationTest", NotificationTestActivity.class),
     CONTENT_PROVIDER("ContentProvider", ContentProviderTestActivity.class),
