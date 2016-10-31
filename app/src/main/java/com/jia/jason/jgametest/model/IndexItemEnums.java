@@ -33,12 +33,14 @@ import com.jia.jason.jgametest.activity.SPTestActivity;
 import com.jia.jason.jgametest.activity.SQLiteTestActivity;
 import com.jia.jason.jgametest.activity.ToggleButtonActivity;
 import com.jia.jason.jgametest.activity.ViewFlipperActivity;
+import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
 
 /**
  * Created by xin.jia
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    TOUCH_TEST("TouchTest", ViewTouchTestActivity.class),
     HANDLER_TEST("HandlerTest", HandlerTestActivity.class),
     IMAGE_CAPTURE_TEST("ImageCapture", ImageCaptureTestActivity.class),
     NOTIFICATION_TEST("NotificationTest", NotificationTestActivity.class),

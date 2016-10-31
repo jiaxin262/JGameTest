@@ -148,6 +148,9 @@
 
         <activity android:name=".activity.HandlerTestActivity">
         </activity>
+
+        <activity android:name=".activity.ViewTouchTestActivity">
+        </activity>
     </application>
 
 </manifest>
