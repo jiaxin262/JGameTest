@@ -151,6 +151,9 @@
 
         <activity android:name=".activity.ViewTouchTestActivity">
         </activity>
+
+        <activity android:name=".activity.ShapeLayerTestActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/light_off" />
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/j_hasmore_transparent_white" />
+            <corners
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp"
+                android:topLeftRadius="8dp"
+                android:topRightRadius="8dp" />
+        </shape>
+    </item>
+</layer-list>
