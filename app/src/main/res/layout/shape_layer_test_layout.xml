@@ -7,12 +7,17 @@
 
     <TextView
         android:id="@+id/j_shape_layer_tv"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/layer_list_shape"
+        android:singleLine="true"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/layer_list_shape"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:text="test"
+        android:padding="50dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/layer_list_border_shape"/>
 
 </LinearLayout>

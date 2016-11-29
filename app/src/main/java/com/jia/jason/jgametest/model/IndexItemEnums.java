@@ -34,6 +34,7 @@ import com.jia.jason.jgametest.activity.SQLiteTestActivity;
 import com.jia.jason.jgametest.activity.ShapeLayerTestActivity;
 import com.jia.jason.jgametest.activity.ToggleButtonActivity;
 import com.jia.jason.jgametest.activity.ViewFlipperActivity;
+import com.jia.jason.jgametest.activity.ViewHeightTestActivity;
 import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
 
 /**
@@ -41,6 +42,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    VIEW_HEIGHT("ViewHeight", ViewHeightTestActivity.class),
     SHAPE_LAYER("ShapeLayer", ShapeLayerTestActivity.class),
     TOUCH_TEST("TouchTest", ViewTouchTestActivity.class),
     HANDLER_TEST("HandlerTest", HandlerTestActivity.class),
