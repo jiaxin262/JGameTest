@@ -157,6 +157,9 @@
 
         <activity android:name=".activity.ViewHeightTestActivity">
         </activity>
+
+        <activity android:name=".activity.HorizontalScrollActivity">
+        </activity>
     </application>
 
 </manifest>

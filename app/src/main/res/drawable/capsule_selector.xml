@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--pressed-->
+    <item android:state_pressed="true" >
+        <shape>
+            <solid android:color="@color/j_title_bar_text" />
+            <stroke android:color="@color/j_bg_notice_divider"
+                android:width="0.5dp"/>
+            <corners android:radius="15dp" />
+            <padding android:left="5dp" android:top="1dp"
+                android:right="5dp" android:bottom="1dp"/>
+        </shape>
+    </item>
+
+    <!--normal-->
+    <item>
+        <shape>
+            <solid android:color="#f9f9f9" />
+            <stroke android:color="@color/j_bg_notice_divider"
+                android:width="0.5dp"/>
+            <corners android:radius="15dp" />
+            <padding android:left="5dp" android:top="1dp"
+                android:right="5dp" android:bottom="1dp"/>
+        </shape>
+    </item>
+
+</selector>

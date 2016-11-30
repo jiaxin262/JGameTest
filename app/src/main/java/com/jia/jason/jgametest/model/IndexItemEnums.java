@@ -17,6 +17,7 @@ import com.jia.jason.jgametest.activity.GravitySensorActivity;
 import com.jia.jason.jgametest.activity.GridViewActivity;
 import com.jia.jason.jgametest.activity.FrescoImageViewActivity;
 import com.jia.jason.jgametest.activity.HandlerTestActivity;
+import com.jia.jason.jgametest.activity.HorizontalScrollActivity;
 import com.jia.jason.jgametest.activity.ImageCaptureTestActivity;
 import com.jia.jason.jgametest.activity.JLunarLanderActivity;
 import com.jia.jason.jgametest.activity.LifeCycleActivity;
@@ -42,6 +43,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    HSCROLL("HScroll", HorizontalScrollActivity.class),
     VIEW_HEIGHT("ViewHeight", ViewHeightTestActivity.class),
     SHAPE_LAYER("ShapeLayer", ShapeLayerTestActivity.class),
     TOUCH_TEST("TouchTest", ViewTouchTestActivity.class),
