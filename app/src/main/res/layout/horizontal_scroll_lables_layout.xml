@@ -1,47 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="74dp"
-    android:orientation="vertical"
-    android:background="@color/white">
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/test_img"
+        android:layout_width="150dp"
+        android:layout_height="225dp"
+        android:scaleType="center"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/recommend_card_bg2"/>
 
     <LinearLayout
+        android:id="@+id/test_ll"
         android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:orientation="horizontal">
+        android:layout_height="280dp"
+        android:orientation="horizontal"
+        android:background="@drawable/recommend_card_bg"
+        android:layout_below="@+id/test_img">
 
     </LinearLayout>
 
-    <HorizontalScrollView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none">
+        android:layout_height="74dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
 
         <LinearLayout
-            android:id="@+id/j_h_scroll_ll"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:id="@+id/j_h_scroll_line1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/j_h_scroll_line2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:orientation="horizontal">
-
-            </LinearLayout>
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:orientation="horizontal">
 
         </LinearLayout>
 
-    </HorizontalScrollView>
-</LinearLayout>
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/j_h_scroll_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/j_h_scroll_line1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/j_h_scroll_line2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </LinearLayout>
+</RelativeLayout>
