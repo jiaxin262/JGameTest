@@ -33,6 +33,7 @@ import com.jia.jason.jgametest.activity.SIActivity1;
 import com.jia.jason.jgametest.activity.SPTestActivity;
 import com.jia.jason.jgametest.activity.SQLiteTestActivity;
 import com.jia.jason.jgametest.activity.ShapeLayerTestActivity;
+import com.jia.jason.jgametest.activity.TextViewPaddingTest;
 import com.jia.jason.jgametest.activity.ToggleButtonActivity;
 import com.jia.jason.jgametest.activity.ViewFlipperActivity;
 import com.jia.jason.jgametest.activity.ViewHeightTestActivity;
@@ -43,6 +44,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    TVPADDING("TvPadding", TextViewPaddingTest.class),
     HSCROLL("HScroll", HorizontalScrollActivity.class),
     VIEW_HEIGHT("ViewHeight", ViewHeightTestActivity.class),
     SHAPE_LAYER("ShapeLayer", ShapeLayerTestActivity.class),

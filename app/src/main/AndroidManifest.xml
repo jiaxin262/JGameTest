@@ -160,6 +160,9 @@
 
         <activity android:name=".activity.HorizontalScrollActivity">
         </activity>
+
+        <activity android:name=".activity.TextViewPaddingTest">
+        </activity>
     </application>
 
 </manifest>
