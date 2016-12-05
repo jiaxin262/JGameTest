@@ -25,6 +25,7 @@ import com.jia.jason.jgametest.activity.ListAdapterActivity;
 import com.jia.jason.jgametest.activity.ListViewAndOtherActivity;
 import com.jia.jason.jgametest.activity.ListViewTestActivity;
 import com.jia.jason.jgametest.activity.ListViewsActivity;
+import com.jia.jason.jgametest.activity.MultiPointerTestActivity;
 import com.jia.jason.jgametest.activity.NotificationTestActivity;
 import com.jia.jason.jgametest.activity.OtaTestActivity;
 import com.jia.jason.jgametest.activity.ProgressBarActivity;
@@ -45,6 +46,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    MULTI_POINTER_TEST("MultiPointer", MultiPointerTestActivity.class),
     SCROLL_TEST("ScrollTest", ScrollTestActivity.class),
     TVPADDING("TvPadding", TextViewPaddingTest.class),
     HSCROLL("HScroll", HorizontalScrollActivity.class),

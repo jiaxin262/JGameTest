@@ -166,6 +166,9 @@
 
         <activity android:name=".activity.ScrollTestActivity">
         </activity>
+
+        <activity android:name=".activity.MultiPointerTestActivity">
+        </activity>
     </application>
 
 </manifest>
