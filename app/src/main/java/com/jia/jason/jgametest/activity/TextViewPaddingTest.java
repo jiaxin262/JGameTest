@@ -18,6 +18,6 @@ public class TextViewPaddingTest extends BaseActivity {
         setContentView(R.layout.tv_padding_layout);
 
         TextView tv = (TextView) findViewById(R.id.tv_padding_test);
-        tv.setTextColor(0);
+        //tv.setTextColor(0);
     }
 }
