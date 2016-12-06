@@ -1,6 +1,7 @@
 package com.jia.jason.jgametest.activity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
@@ -41,9 +42,9 @@ public class HorizontalScrollActivity extends BaseActivity {
     }
 
     private void mockData(int itemSize) {
-        String[] s = {"asdf", "萨达", "sdfafgfdg", "啥都发大水发大厦的飞洒地方", "aed d阿斯蒂芬", "第三方", "阿斯顿发生的冯绍峰", "阿拉蕾"};
+        String[] s = {"abcdefghijklmnopqrstabcdefghijklmnopqrst", "萨达", "12345678901234561234567890123456", "一二三四五六七八九十零一二三四五六七八九十零", "aed d阿斯蒂芬", "第三方", "阿斯顿发生的冯绍峰", "阿拉蕾"};
         for (int i = 0; i < itemSize; i++) {
-            contents[i] = i + "-" + s[i / 3];
+            contents[i] = "" + s[i / 3];
         }
     }
 
@@ -51,6 +52,10 @@ public class HorizontalScrollActivity extends BaseActivity {
         TextView capsuleTv = new TextView(HorizontalScrollActivity.this);
         capsuleTv.setText(content);
         capsuleTv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 13);
+        capsuleTv.setMaxEms(9);
+        capsuleTv.setMaxLines(1);
+        //capsuleTv.setMaxWidth(BitmapHelper.dip2px(130));
+        capsuleTv.setEllipsize(TextUtils.TruncateAt.END);
         capsuleTv.setBackgroundDrawable(getResources().getDrawable(R.drawable.capsule_selector));
         capsuleTv.setOnClickListener(this);
         return capsuleTv;
