@@ -1,15 +1,21 @@
 package com.jia.jason.jgametest.activity;
 
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.helper.BitmapHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by jiaxin on 2016/11/30.
@@ -17,11 +23,14 @@ import com.jia.jason.jgametest.helper.BitmapHelper;
 
 public class HorizontalScrollActivity extends BaseActivity {
 
+    public static final String TAG = "HScrollActivity";
     LinearLayout hScrollLlLine1;
     LinearLayout hScrollLlLine2;
+    ImageView imageView;
 
     private final int ITEM_SIZE = 15;
     String[] contents = new String[ITEM_SIZE];
+    List<Integer> list = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +39,8 @@ public class HorizontalScrollActivity extends BaseActivity {
 
         hScrollLlLine1 = (LinearLayout) findViewById(R.id.j_h_scroll_line1);
         hScrollLlLine2 = (LinearLayout) findViewById(R.id.j_h_scroll_line2);
+        LinearLayout ll = (LinearLayout) findViewById(R.id.recommend_1_bg_ll);
+        ll.setBackgroundDrawable(getResources().getDrawable(R.drawable.bg_1));
 
         mockData(ITEM_SIZE);
         for (int i = 0; i < ITEM_SIZE; i++) {
@@ -39,6 +50,17 @@ public class HorizontalScrollActivity extends BaseActivity {
                 hScrollLlLine2.addView(generateCapsuleLabel(contents[i]), getCapsuleLayoutParam());
             }
         }
+
+        imageView = (ImageView) findViewById(R.id.recommend_bg_test_img);
+        imageView.setOnClickListener(this);
+
+        hScrollLlLine1.getChildAt(-1);
+        Log.d(TAG, -3%2+"");
+    }
+
+    @Override
+    public void onClick(View v) {
+        Log.d(TAG, imageView.getWidth()+","+imageView.getMeasuredWidth());
     }
 
     private void mockData(int itemSize) {

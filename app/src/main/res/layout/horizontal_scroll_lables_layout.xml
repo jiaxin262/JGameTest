@@ -6,7 +6,7 @@
     <TextView
         android:id="@+id/test_img"
         android:layout_width="150dp"
-        android:layout_height="225dp"
+        android:layout_height="50dp"
         android:scaleType="center"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
@@ -15,31 +15,63 @@
     <LinearLayout
         android:id="@+id/test_ll"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         android:background="@drawable/recommend_card_bg"
         android:layout_below="@+id/test_img">
 
     </LinearLayout>
 
+    <ImageView
+        android:id="@+id/recommend_bg_test_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/recommend_card_bg_origin"
+        android:layout_above="@+id/recommend_1_ll"/>
+
     <LinearLayout
+        android:id="@+id/recommend_1_ll"
         android:layout_width="match_parent"
-        android:layout_height="74dp"
+        android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="vertical"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
 
         <LinearLayout
+            android:id="@+id/recommend_1_bg_ll"
             android:layout_width="match_parent"
-            android:layout_height="15dp"
-            android:orientation="horizontal">
+            android:layout_height="85dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp">
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:src="@drawable/recommend_search_icon"
+                    android:layout_marginRight="4dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12dp"
+                    android:text="大家都在搜"/>
+            </LinearLayout>
 
         </LinearLayout>
 
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:scrollbars="none">
+            android:scrollbars="none"
+            android:layout_marginTop="10dp">
 
             <LinearLayout
                 android:id="@+id/j_h_scroll_ll"
