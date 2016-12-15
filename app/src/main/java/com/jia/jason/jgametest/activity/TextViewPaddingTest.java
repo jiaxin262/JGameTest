@@ -1,6 +1,7 @@
 package com.jia.jason.jgametest.activity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.TextView;
 
 import com.jia.jason.jgametest.R;
@@ -18,6 +19,8 @@ public class TextViewPaddingTest extends BaseActivity {
         setContentView(R.layout.tv_padding_layout);
 
         TextView tv = (TextView) findViewById(R.id.tv_padding_test);
+        tv.setSingleLine(true);
+        tv.setEllipsize(TextUtils.TruncateAt.END);
         //tv.setTextColor(0);
     }
 }

@@ -17,7 +17,6 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:paddingLeft="10dp"
-            android:singleLine="true"
             android:text="五道口金融学院一二三四五六七八九十零"
             android:textSize="14dp" />
 
