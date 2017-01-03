@@ -51,16 +51,18 @@ public class TextViewPaddingTest extends BaseActivity {
             Log.d(TAG, s);
         }
 
-        SparseArray<String> array = new SparseArray<>(10);
-        for (int i = 0; i < 6; i++) {
+        SparseArray<String> array = new SparseArray<>();
+        for (int i = 0; i < 10; i++) {
             array.put(i, "b"+i);
         }
         array.put(3, "put3");
         array.put(9, "put9");
+        array.put(15, "put15");
         Log.d(TAG, array.size()+"");
         Log.d(TAG, array.get(9));
+        Log.d(TAG, array.get(15)+"");
         for (int i = 0; i < array.size(); i++) {
-            //Log.d(TAG, array.get(i));
+            Log.d(TAG, array.get(i)+"");
         }
     }
 }
