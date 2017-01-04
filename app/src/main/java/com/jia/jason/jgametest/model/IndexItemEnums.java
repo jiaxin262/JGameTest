@@ -3,6 +3,7 @@ package com.jia.jason.jgametest.model;
 import com.jia.jason.jgametest.activity.AutoCompleteTextActivity;
 import com.jia.jason.jgametest.activity.BaseActivity;
 import com.jia.jason.jgametest.activity.BroadcastTestActivity;
+import com.jia.jason.jgametest.activity.BuildValueTestActivity;
 import com.jia.jason.jgametest.activity.ConstraintActivity;
 import com.jia.jason.jgametest.activity.ContentProviderTestActivity;
 import com.jia.jason.jgametest.activity.DrawableAnimationActivity;
@@ -48,6 +49,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    BUILD_VALUE("BuildValue", BuildValueTestActivity.class),
     OBJECT_REF_TEST("ObjectRefTest", ObjectRefTestActivity.class),
     PROXY_TEST("ProxyTest", ProxyTestActivity.class),
     MULTI_POINTER_TEST("MultiPointer", MultiPointerTestActivity.class),
