@@ -172,6 +172,9 @@
 
         <activity android:name=".activity.ProxyTestActivity">
         </activity>
+
+        <activity android:name=".activity.ObjectRefTestActivity">
+        </activity>
     </application>
 
 </manifest>

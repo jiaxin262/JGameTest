@@ -27,6 +27,7 @@ import com.jia.jason.jgametest.activity.ListViewTestActivity;
 import com.jia.jason.jgametest.activity.ListViewsActivity;
 import com.jia.jason.jgametest.activity.MultiPointerTestActivity;
 import com.jia.jason.jgametest.activity.NotificationTestActivity;
+import com.jia.jason.jgametest.activity.ObjectRefTestActivity;
 import com.jia.jason.jgametest.activity.OtaTestActivity;
 import com.jia.jason.jgametest.activity.ProgressBarActivity;
 import com.jia.jason.jgametest.activity.ProxyTestActivity;
@@ -47,6 +48,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    OBJECT_REF_TEST("ObjectRefTest", ObjectRefTestActivity.class),
     PROXY_TEST("ProxyTest", ProxyTestActivity.class),
     MULTI_POINTER_TEST("MultiPointer", MultiPointerTestActivity.class),
     SCROLL_TEST("ScrollTest", ScrollTestActivity.class),
