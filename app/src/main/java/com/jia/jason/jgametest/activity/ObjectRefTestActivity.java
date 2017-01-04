@@ -35,9 +35,12 @@ public class ObjectRefTestActivity extends BaseActivity {
         ObjectRefModel model2 = new ObjectRefModel(2, "model2", new int[]{6, 7, 8});
         addModel(model2);
 
+        model.name = "new name";
+
         for (int i = 0; i < objectRefs.size(); i++) {
             Log.d(TAG, objectRefs.get(i).hashCode()+"");
             Log.d(TAG, objectRefMaps.get(i).hashCode()+"");
+            Log.d(TAG, objectRefs.get(i).name+"");
         }
     }
 
