@@ -8,6 +8,10 @@ import android.util.Log;
 
 public class RecommendView1 extends RecommendViewBase {
 
+    public RecommendView1(int flag) {
+        super(flag, null);
+    }
+
     @Override
     public void hide() {
         super.hide();

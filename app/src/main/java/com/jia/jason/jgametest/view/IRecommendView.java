@@ -7,4 +7,6 @@ package com.jia.jason.jgametest.view;
 public interface IRecommendView {
 
     void hide();
+
+    void onPageStarted();
 }
