@@ -1,7 +1,9 @@
 package com.jia.jason.jgametest.activity;
 
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -17,6 +19,7 @@ public class BuildValueTestActivity extends BaseActivity {
     public static final String TAG = "BuildValueTestActivity";
 
     LinearLayout ll;
+    int textColor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,12 +53,21 @@ public class BuildValueTestActivity extends BaseActivity {
         ll.addView(getTextView("Build.SUPPORTED_64_BIT_ABIS:   " + Build.SUPPORTED_64_BIT_ABIS));
         ll.addView(getTextView("Build.getRadioVersion:   " + Build.getRadioVersion()));
 
+        String color = "#FF00FF,#ff4422";
+        String[] colors = color.split(",");
+        textColor = Color.parseColor(colors[0]);
+        Log.d(TAG, "textColor:"+textColor);
+        ll.addView(getTextView("testColor"));
+
     }
 
     private View getTextView(String s) {
         TextView tv = new TextView(this);
         tv.setText(s);
         tv.setTextSize(TypedValue.COMPLEX_UNIT_DIP, 15);
+        if (textColor != 0) {
+            tv.setTextColor(textColor);
+        }
         return tv;
     }
 }
