@@ -178,6 +178,9 @@
 
         <activity android:name=".activity.BuildValueTestActivity">
         </activity>
+
+        <activity android:name=".activity.SingleInstanceTestActivity">
+        </activity>
     </application>
 
 </manifest>
