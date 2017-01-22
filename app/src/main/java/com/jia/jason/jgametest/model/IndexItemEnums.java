@@ -38,7 +38,7 @@ import com.jia.jason.jgametest.activity.SPTestActivity;
 import com.jia.jason.jgametest.activity.SQLiteTestActivity;
 import com.jia.jason.jgametest.activity.ScrollTestActivity;
 import com.jia.jason.jgametest.activity.ShapeLayerTestActivity;
-import com.jia.jason.jgametest.activity.SingleInstanceTestActivity;
+import com.jia.jason.jgametest.activity.IteratorTestActivity;
 import com.jia.jason.jgametest.activity.TextViewPaddingTest;
 import com.jia.jason.jgametest.activity.ToggleButtonActivity;
 import com.jia.jason.jgametest.activity.ViewFlipperActivity;
@@ -50,7 +50,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
-    SINGLEINSTANCE("SingleInstance", SingleInstanceTestActivity.class),
+    ITERATORTEST("IteratorTest", IteratorTestActivity.class),
     BUILD_VALUE("BuildValue", BuildValueTestActivity.class),
     OBJECT_REF_TEST("ObjectRefTest", ObjectRefTestActivity.class),
     PROXY_TEST("ProxyTest", ProxyTestActivity.class),
