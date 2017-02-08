@@ -6,7 +6,9 @@ import android.util.SparseArray;
 
 import com.jia.jason.jgametest.model.ObjectRefModel;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by jiaxin on 2017/1/4.
@@ -17,6 +19,7 @@ public class ObjectRefTestActivity extends BaseActivity {
 
     SparseArray<ObjectRefModel> objectRefs;
     HashMap<Integer, ObjectRefModel> objectRefMaps;
+    List<ObjectRefModel> objectList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +31,20 @@ public class ObjectRefTestActivity extends BaseActivity {
     private void init() {
         objectRefs = new SparseArray<>();
         objectRefMaps = new HashMap<>();
+        objectList = new ArrayList<>();
         ObjectRefModel model = new ObjectRefModel(0, "model0", new int[]{0, 1, 2});
         addModel(model);
         ObjectRefModel model1 = new ObjectRefModel(1, "model1", new int[]{3, 4, 5});
         addModel(model1);
         ObjectRefModel model2 = new ObjectRefModel(2, "model2", new int[]{6, 7, 8});
         addModel(model2);
+
+        objectList.add(model);
+        objectList.add(model1);
+        objectList.add(model2);
+        Log.d(TAG, "objectList.contains(model1):" + objectList.contains(model1));
+        ObjectRefModel model3 = new ObjectRefModel(2, "model2", new int[]{6, 7, 8});
+        Log.d(TAG, "objectList.contains(model3):" + objectList.contains(model3));
 
         model.name = "new name";
 
