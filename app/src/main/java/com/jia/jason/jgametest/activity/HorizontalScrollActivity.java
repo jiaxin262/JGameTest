@@ -1,6 +1,8 @@
 package com.jia.jason.jgametest.activity;
 
 import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
@@ -56,6 +58,9 @@ public class HorizontalScrollActivity extends BaseActivity {
 
         hScrollLlLine1.getChildAt(-1);
         Log.d(TAG, -3%2+"");
+
+        Log.d(TAG, "BitmapHelper.dip2px(15)=" + BitmapHelper.dip2px(15));
+
     }
 
     @Override
@@ -64,7 +69,7 @@ public class HorizontalScrollActivity extends BaseActivity {
     }
 
     private void mockData(int itemSize) {
-        String[] s = {"abcdefghijklmnopqrstabcdefghijklmnopqrst", "萨达", "12345678901234561234567890123456", "一二三四五六七八九十零一二三四五六七八九十零", "aed d阿斯蒂芬", "第三方", "阿斯顿发生的冯绍峰", "阿拉蕾"};
+        String[] s = {"宇宙中心五道口", "北京五道口繁华吗", "北京五道口的旅游景点", "五道口 潮流", "五道口 酒吧街", "北大金融学 参考书", "阿斯顿发生的冯绍峰", "阿拉蕾"};
         for (int i = 0; i < itemSize; i++) {
             contents[i] = "" + s[i / 3];
         }
