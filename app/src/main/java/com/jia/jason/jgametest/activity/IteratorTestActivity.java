@@ -32,6 +32,21 @@ public class IteratorTestActivity extends BaseActivity {
         for (String s : strings) {
             Log.d(TAG, s);
         }
+
+        List<Integer> list = new ArrayList<>();
+        list.add(5);
+        list.add(6);
+        list.add(7);
+        list.add(8);
+        int len = list.size();
+        for (int i = 0; i < len; i++) {
+            Log.d(TAG, "i:" + i + ",value:" + list.get(i));
+            if (list.get(i) == 6) {
+                list.remove(i);
+                len = list.size();
+                i--;
+            }
+        }
     }
 
 }
