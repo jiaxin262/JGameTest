@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/j_button"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="底下的底下的底下的按钮按钮按钮按钮"
+        android:layout_centerInParent="true"/>
+
+    <com.jia.jason.jgametest.view.InterceptableViewGroup
+        android:id="@+id/j_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.jia.jason.jgametest.view.InterceptableViewGroup>
+
+</RelativeLayout>

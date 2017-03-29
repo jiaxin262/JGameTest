@@ -181,6 +181,9 @@
 
         <activity android:name=".activity.IteratorTestActivity">
         </activity>
+
+        <activity android:name=".activity.InterceptTestActivity">
+        </activity>
     </application>
 
 </manifest>

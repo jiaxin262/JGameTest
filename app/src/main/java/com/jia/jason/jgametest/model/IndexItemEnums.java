@@ -20,6 +20,7 @@ import com.jia.jason.jgametest.activity.FrescoImageViewActivity;
 import com.jia.jason.jgametest.activity.HandlerTestActivity;
 import com.jia.jason.jgametest.activity.HorizontalScrollActivity;
 import com.jia.jason.jgametest.activity.ImageCaptureTestActivity;
+import com.jia.jason.jgametest.activity.InterceptTestActivity;
 import com.jia.jason.jgametest.activity.JLunarLanderActivity;
 import com.jia.jason.jgametest.activity.LifeCycleActivity;
 import com.jia.jason.jgametest.activity.ListAdapterActivity;
@@ -50,6 +51,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    INTERCEPTTEST("InterceptTest", InterceptTestActivity.class),
     ITERATORTEST("IteratorTest", IteratorTestActivity.class),
     BUILD_VALUE("BuildValue", BuildValueTestActivity.class),
     OBJECT_REF_TEST("ObjectRefTest", ObjectRefTestActivity.class),
