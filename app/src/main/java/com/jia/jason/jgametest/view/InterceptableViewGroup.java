@@ -26,10 +26,13 @@ public class InterceptableViewGroup extends RelativeLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        Log.d(TAG, "onInterceptTouchEvent");
-        if (intercept) {
+        if (ev.getAction() == MotionEvent.ACTION_MOVE) {
+            Log.d(TAG, "parent-down");
             return true;
         }
+//        if (intercept) {
+//            return true;
+//        }
         return super.onInterceptTouchEvent(ev);
     }
 
