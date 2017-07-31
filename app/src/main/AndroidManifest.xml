@@ -13,7 +13,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/airship_icon"
         android:label="@string/app_name"
-        android:theme="@style/pub_fw_Theme_App" >
+        android:theme="@style/AppTheme" >
 
         <receiver android:name=".broadcast.BootCompleteReciever">
             <intent-filter android:priority="100">
@@ -183,6 +183,9 @@
         </activity>
 
         <activity android:name=".activity.InterceptTestActivity">
+        </activity>
+
+        <activity android:name=".activity.DatePickerTest">
         </activity>
     </application>
 

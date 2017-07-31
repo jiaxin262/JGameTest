@@ -6,6 +6,7 @@ import com.jia.jason.jgametest.activity.BroadcastTestActivity;
 import com.jia.jason.jgametest.activity.BuildValueTestActivity;
 import com.jia.jason.jgametest.activity.ConstraintActivity;
 import com.jia.jason.jgametest.activity.ContentProviderTestActivity;
+import com.jia.jason.jgametest.activity.DatePickerTest;
 import com.jia.jason.jgametest.activity.DrawableAnimationActivity;
 import com.jia.jason.jgametest.activity.DrawableStateActivity;
 import com.jia.jason.jgametest.activity.DrawableTestActivity;
@@ -51,6 +52,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    DATEPICKER("DatePicker", DatePickerTest.class),
     INTERCEPTTEST("InterceptTest", InterceptTestActivity.class),
     ITERATORTEST("IteratorTest", IteratorTestActivity.class),
     BUILD_VALUE("BuildValue", BuildValueTestActivity.class),
