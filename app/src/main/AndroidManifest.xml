@@ -187,6 +187,9 @@
 
         <activity android:name=".activity.DatePickerTest">
         </activity>
+
+        <activity android:name=".activity.RegexTestActivity">
+        </activity>
     </application>
 
 </manifest>

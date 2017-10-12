@@ -35,6 +35,7 @@ import com.jia.jason.jgametest.activity.OtaTestActivity;
 import com.jia.jason.jgametest.activity.ProgressBarActivity;
 import com.jia.jason.jgametest.activity.ProxyTestActivity;
 import com.jia.jason.jgametest.activity.ReachFilesActivity;
+import com.jia.jason.jgametest.activity.RegexTestActivity;
 import com.jia.jason.jgametest.activity.SIActivity1;
 import com.jia.jason.jgametest.activity.SPTestActivity;
 import com.jia.jason.jgametest.activity.SQLiteTestActivity;
@@ -52,6 +53,7 @@ import com.jia.jason.jgametest.activity.ViewTouchTestActivity;
  * since 2016/9/19
  */
 public enum IndexItemEnums {
+    REGEX("RegexText", RegexTestActivity.class),
     DATEPICKER("DatePicker", DatePickerTest.class),
     INTERCEPTTEST("InterceptTest", InterceptTestActivity.class),
     ITERATORTEST("IteratorTest", IteratorTestActivity.class),
