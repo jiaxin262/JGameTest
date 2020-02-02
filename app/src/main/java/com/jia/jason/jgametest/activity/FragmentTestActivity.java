@@ -1,10 +1,6 @@
 package com.jia.jason.jgametest.activity;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.PagerTabStrip;
-import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.widget.RadioGroup;
 import android.widget.Toast;
@@ -18,6 +14,11 @@ import com.jia.jason.jgametest.fragment.Fragment4;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.viewpager.widget.PagerTabStrip;
+import androidx.viewpager.widget.ViewPager;
 
 /**
  * Created by xin.jia

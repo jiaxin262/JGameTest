@@ -1,7 +1,6 @@
 package com.jia.jason.jgametest.fragment;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +11,8 @@ import com.jia.jason.jgametest.R;
 import com.jia.jason.jgametest.util.CopyCrashUtil;
 
 import java.io.File;
+
+import androidx.fragment.app.Fragment;
 
 /**
  * Created by xin.jia

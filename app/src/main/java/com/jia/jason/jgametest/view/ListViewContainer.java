@@ -2,7 +2,7 @@ package com.jia.jason.jgametest.view;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.support.v4.view.GestureDetectorCompat;
+import androidx.core.view.GestureDetectorCompat;
 import android.util.AttributeSet;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
