@@ -35,4 +35,7 @@ dependencies {
     implementation 'com.facebook.fresco:webpsupport:0.12.0'
     // 仅支持 WebP 静态图，需要添加
     implementation 'com.facebook.fresco:webpsupport:0.12.0'
+    implementation 'com.youth.banner:banner:2.0.0-alpha'
+    implementation "androidx.viewpager2:viewpager2:1.0.0"
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
 }
